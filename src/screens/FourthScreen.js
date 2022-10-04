@@ -28,21 +28,22 @@ function FourthScreen(props) {
               // height: "6rem",
               background: `url(${dish.product_image}) bottom right 15% no-repeat #46B6AC`,
             }}>
-            <input
-              onClick={() => {
-                setprodDesc(dish.dish_name);
-                setproddelTime("Delivery: " + dish.delivery_time);
-                setprodprice(dish.dish_price);
-              }}
-              className="form-check-input position-relative"
-              type="radio"
-              name="exampleRadios"
-              id="exampleRadios2"
-              value="b"></input>
             <div className="pt-4">{dish.dish_price}</div>
             <div>{dish.dish_code}</div>
           </div>
         </Link>
+        <input
+          style={{ position: "relative", top: "-70px" }}
+          onClick={() => {
+            setprodDesc(dish.dish_name);
+            setproddelTime("Delivery: " + dish.delivery_time);
+            setprodprice(dish.dish_price);
+          }}
+          className="form-check-input position-relative"
+          type="radio"
+          name="exampleRadios"
+          id="exampleRadios2"
+          value="b"></input>
       </div>
     );
   });
