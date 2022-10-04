@@ -2,17 +2,18 @@ import React, { useMemo } from "react";
 import { useTable } from "react-table";
 import { COLUMNS } from "./Colums";
 import MOCK_DATA from "./MOCK_DATA.json";
+import MOCK_APP_DATA from "./sample.json";
 import "./table.css";
 import axios from "axios";
 
 function BasicTable() {
-  const baseURL = "http://100059.pythonanywhere.com/api/payload/?format=api";
-  const [order, setorder] = React.useState(null);
+  const baseURL = "https://100059.pythonanywhere.com/api/population/";
+  const [Order, setOrder] = React.useState(null);
 
   React.useEffect(() => {
     axios.get(baseURL).then((response) => {
-      setorder(response.data);
-      console.log(order);
+      setOrder(response.data);
+      console.log(response.data.normal.data, "thtttttttttttttt");
     });
   }, []);
 

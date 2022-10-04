@@ -2,15 +2,55 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "../components/drop.css";
 import CupertinoFooter2 from "../components/CupertinoFooter2";
-import MaterialCardWithButtons from "../components/MaterialCardWithButtons";
-import MaterialRadio1 from "../components/MaterialRadio1";
+
 import CupertinoFooter21 from "../components/CupertinoFooter21";
 import MaterialButtonDanger from "../components/MaterialButtonDanger";
 import Slider from "react-slick";
+import prodData from "../components/sample.json";
+import { Link } from "react-router-dom";
 
 function FourthScreen(props) {
-  const [productname, setproductname] = useState("");
-  const [productcode, setproductcode] = useState("");
+  const dishes = prodData.normal.data;
+  let ProdCode = dishes[0].map((dish) => dish.dish_code);
+  let ProdName = dishes[0].map((dish) => dish.dish_name);
+  const [prodDesc, setprodDesc] = useState("see product description");
+  const [prodprice, setprodprice] = useState("price");
+  const [proddelTime, setproddelTime] = useState("delivering time");
+
+  let dishdisplay = dishes[0].map((dish) => {
+    return (
+      <div className="col-5 pt-3" key={dish._id}>
+        <Link to="/SevenScreen">
+          <div
+            className="card"
+            style={{
+              width: "8rem",
+              // height: "6rem",
+              background: `url(${dish.product_image}) bottom right 15% no-repeat #46B6AC`,
+            }}>
+            <input
+              onClick={() => {
+                setprodDesc(dish.dish_name);
+                setproddelTime("Delivery: " + dish.delivery_time);
+                setprodprice(dish.dish_price);
+              }}
+              className="form-check-input position-relative"
+              type="radio"
+              name="exampleRadios"
+              id="exampleRadios2"
+              value="b"></input>
+            <div className="pt-4">{dish.dish_price}</div>
+            <div>{dish.dish_code}</div>
+          </div>
+        </Link>
+      </div>
+    );
+  });
+  const Quantity = ["1", "2", "3", "4", "5", "6"];
+  React.useEffect(() => {
+    console.log(ProdCode, "kkkkkkkkkkkkkkkk");
+  }, []);
+
   const settings = {
     className: "slider variable-width",
 
@@ -20,12 +60,10 @@ function FourthScreen(props) {
     slidesToScroll: 1,
     variableWidth: true,
   };
-  const Quantity = ["1", "2", "3", "4", "5", "6", "7", "9"];
-  var ProdName = ["Product Name", "this", "example", "isnt", "funny"];
-  var ProdCode = ["Product Code", "Z10002", "Z10003", "Z10007", "Z10002"],
-    MakeItem = function (X) {
-      return <option>{X}</option>;
-    };
+
+  const MakeItem = function (X) {
+    return <option>{X}</option>;
+  };
   return (
     <Container>
       <RectStack>
@@ -43,124 +81,17 @@ function FourthScreen(props) {
           <Brand>brand of cafe, branch</Brand>
 
           <div class="row p-4" style={{ height: "220px", overflowY: "scroll" }}>
-            <div className="col-5 pt-3">
-              <div
-                className="card"
-                style={{
-                  width: "8rem",
-                  // height: "6rem",
-                  background:
-                    "url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC",
-                }}>
-                <input
-                  className="form-check-input position-relative"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="b"></input>
-                <div className="pt-4">$7</div>
-                <div>Z1006</div>
-              </div>
-            </div>
-            <div className="col-5 pt-3">
-              <div
-                className="card"
-                style={{
-                  width: "8rem",
-                  // height: "6rem",
-                  background:
-                    "url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC",
-                }}>
-                <input
-                  className="form-check-input position-relative"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="b"></input>
-                <div className="pt-4">$7</div>
-                <div>Z1006</div>
-              </div>
-            </div>
-            <div className="col-5 pt-3">
-              <div
-                className="card"
-                style={{
-                  width: "8rem",
-                  // height: "6rem",
-                  background:
-                    "url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC",
-                }}>
-                <input
-                  className="form-check-input position-relative"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="b"></input>
-                <div className="pt-4">$7</div>
-                <div>Z1006</div>
-              </div>
-            </div>
-            <div className="col-5 pt-3">
-              <div
-                className="card"
-                style={{
-                  width: "8rem",
-                  // height: "6rem",
-                  background:
-                    "url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC",
-                }}>
-                <input
-                  className="form-check-input position-relative"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="b"></input>
-                <div className="pt-4">$7</div>
-                <div>Z1006</div>
-              </div>
-            </div>
-            <div className="col-5 pt-3">
-              <div
-                className="card"
-                style={{
-                  width: "8rem",
-                  // height: "6rem",
-                  background:
-                    "url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC",
-                }}>
-                <input
-                  className="form-check-input position-relative"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="b"></input>
-                <div className="pt-4">$7</div>
-                <div>Z1006</div>
-              </div>
-            </div>
-            <div className="col-5 pt-3">
-              <div
-                className="card"
-                style={{
-                  width: "8rem",
-                  // height: "6rem",
-                  background:
-                    "url(http://www.getmdl.io/assets/demos/dog.png) bottom right 15% no-repeat #46B6AC",
-                }}>
-                <input
-                  className="form-check-input position-relative"
-                  type="radio"
-                  name="exampleRadios"
-                  id="exampleRadios2"
-                  value="b"></input>
-                <div className="pt-4">$7</div>
-                <div>Z1006</div>
-              </div>
-            </div>
+            {dishdisplay}
           </div>
           <Rect>
             <LoremIpsumRow>
-              <LoremIpsum>selected dished {"\n"}detail goes here</LoremIpsum>
+              <LoremIpsum style={{ width: "180px !important" }}>
+                {prodDesc}
+                {"\n"}
+                {proddelTime}
+                {"\n"}
+                {prodprice}
+              </LoremIpsum>
               <MaterialButtonDanger
                 style={{
                   height: 36,
@@ -515,7 +446,7 @@ const LoremIpsum = styled.span`
   font-style: normal;
   font-weight: 400;
   color: #121212;
-  margin-top: 4px;
+  margin-top: -12px;
 `;
 const Brand = styled.span`
   font-family: Roboto;
@@ -536,7 +467,7 @@ const LoremIpsumRow = styled.div`
   display: flex;
   margin-top: 11px;
   margin-left: 16px;
-  margin-right: 24px;
+  margin-right: 28px;
 `;
 
 const QuantityRow = styled.div`
@@ -544,7 +475,7 @@ const QuantityRow = styled.div`
   flex-direction: row;
   display: flex;
   margin-top: 18px;
-  margin-left: 85px;
+  margin-left: 110px;
   margin-right: 123px;
 `;
 
