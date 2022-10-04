@@ -1,9 +1,8 @@
 {
   "files": {
     "main.css": "/100059-digitalq-test/static/css/main.baff02fe.css",
-    "main.js": "/100059-digitalq-test/static/js/main.ba07ed88.js",
+    "main.js": "/100059-digitalq-test/static/js/main.7e3a5235.js",
     "static/js/787.7efd31bd.chunk.js": "/100059-digitalq-test/static/js/787.7efd31bd.chunk.js",
-    "static/media/cardImage.png": "/100059-digitalq-test/static/media/cardImage.18de07683ffe87a67cd8.png",
     "static/media/do1.png": "/100059-digitalq-test/static/media/do1.246740eead5bcc6ba567.png",
     "static/media/Roboto-BlackItalic.ttf": "/100059-digitalq-test/static/media/Roboto-BlackItalic.6a93c6dcc83d3e09b22e.ttf",
     "static/media/Roboto-Italic.ttf": "/100059-digitalq-test/static/media/Roboto-Italic.801622d3d97b471ac0a1.ttf",
@@ -26,6 +25,7 @@
     "static/media/Roboto-Thin.ttf": "/100059-digitalq-test/static/media/Roboto-Thin.5911576099b5bb97cadf.ttf",
     "static/media/MaterialIcons-Regular.ttf": "/100059-digitalq-test/static/media/MaterialIcons-Regular.5e7382c63da0098d634a.ttf",
     "static/media/MaterialIcons-Regular.woff": "/100059-digitalq-test/static/media/MaterialIcons-Regular.83bebaf37c09c7e1c3ee.woff",
+    "static/media/food.jpg": "/100059-digitalq-test/static/media/food.ff87d4a500a90fad7deb.jpg",
     "static/media/MaterialIcons-Regular.woff2": "/100059-digitalq-test/static/media/MaterialIcons-Regular.4bf70dc7483474243403.woff2",
     "static/media/do3.png": "/100059-digitalq-test/static/media/do3.57cae71e40cd16f537c9.png",
     "static/media/slick.svg": "/100059-digitalq-test/static/media/slick.2630a3e3eab21c607e21.svg",
@@ -34,11 +34,11 @@
     "static/media/slick.woff": "/100059-digitalq-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/100059-digitalq-test/index.html",
     "main.baff02fe.css.map": "/100059-digitalq-test/static/css/main.baff02fe.css.map",
-    "main.ba07ed88.js.map": "/100059-digitalq-test/static/js/main.ba07ed88.js.map",
+    "main.7e3a5235.js.map": "/100059-digitalq-test/static/js/main.7e3a5235.js.map",
     "787.7efd31bd.chunk.js.map": "/100059-digitalq-test/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.baff02fe.css",
-    "static/js/main.ba07ed88.js"
+    "static/js/main.7e3a5235.js"
   ]
 }
