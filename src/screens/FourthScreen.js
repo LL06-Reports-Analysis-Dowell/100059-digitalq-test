@@ -22,7 +22,7 @@ function FourthScreen(props) {
   };
   const Quantity = ["1", "2", "3", "4", "5", "6", "7", "9"];
   var ProdName = ["Product Name", "this", "example", "isnt", "funny"];
-  var ProdCode = ["Product Code", "Z10002", "Z10003", "Z10007", "Z10002"],
+  var ProdCode = ["Product Code", "Z1001", "Z1002", "Z1003", "Z1004"],
     MakeItem = function (X) {
       return <option>{X}</option>;
     };
