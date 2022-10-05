@@ -1,192 +1,3 @@
-// import React from "react";
-// import styled from "styled-components";
-// import { BsArrowLeftCircle, BsInfoCircle } from "react-icons/bs";
-// import { TbMessageCircle } from "react-icons/tb";
-// import MaterialButtonDanger from "../components/MaterialButtonDanger";
-
-// import { Link } from "react-router-dom";
-
-// function SevenScreen() {
-//   return (
-// <Container>
-//   <Rect>
-//     <ImageStack>
-//       <Image src={require("../assets/images/food.jpg")}></Image>
-//       <Rect2>
-//         <LoremIpsumColumnRow>
-//           <LoremIpsumColumn>
-//             <LoremIpsum>product detail and specification</LoremIpsum>
-//             <TopUpPrice>top up price</TopUpPrice>
-//           </LoremIpsumColumn>
-//           <MaterialButtonDanger
-//             style={{
-//               height: 38,
-//               width: 56,
-//               borderWidth: 0,
-//               borderColor: "#000000",
-//               borderRadius: 12,
-//               shadowRadius: 0,
-//               marginLeft: 29,
-//               marginTop: 8,
-//               borderStyle: "solid",
-//               boxShadow: "5px 5px 0px  0.76px rgba(0,0,0,1) ",
-//             }}></MaterialButtonDanger>
-//         </LoremIpsumColumnRow>
-//         <ProductCodeRow>
-//           <ProductCode>product code</ProductCode>
-//           <TopUpPrice1>top up price</TopUpPrice1>
-//         </ProductCodeRow>
-//       </Rect2>
-//     </ImageStack>
-//     {/* <EntypoIcon
-//       name="chevron-with-circle-left"
-//       style={{
-//         color: "rgba(128,128,128,1)",
-//         fontSize: 40,
-//         height: 44,
-//         width: 40,
-//         marginTop: 9,
-//         marginLeft: 292,
-//       }}></EntypoIcon> */}
-//     <BsInfoCircle />
-//     <Icon2Row>
-//       {/* <MaterialCommunityIconsIcon
-//         name="message-bulleted"
-//         style={{
-//           color: "rgba(128,128,128,1)",
-//           fontSize: 40,
-//           height: 44,
-//           width: 40,
-//         }}></MaterialCommunityIconsIcon> */}
-//       <TbMessageCircle />
-//       {/* <FeatherIcon
-//         name="info"
-//         style={{
-//           color: "rgba(128,128,128,1)",
-//           fontSize: 40,
-//           height: 41,
-//           width: 40,
-//           marginLeft: 258,
-//           marginTop: 3,
-//         }}></FeatherIcon> */}
-//       <BsArrowLeftCircle />
-//     </Icon2Row>
-//   </Rect>
-// </Container>
-//   );
-// }
-
-// const Container = styled.div`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   height: 100vh;
-//   width: 100vw;
-// `;
-
-// const Rect = styled.div`
-//   width: 355px;
-//   height: 742px;
-//   background-color: rgba(212, 253, 194, 1);
-//   flex-direction: column;
-//   display: flex;
-//   margin-left: 5px;
-// `;
-
-// const Image = styled.img`
-//   top: 0px;
-//   left: 12px;
-//   width: 339px;
-//   height: 384px;
-//   position: absolute;
-//   object-fit: contain;
-// `;
-
-// const Rect2 = styled.div`
-//   top: 382px;
-//   left: 0px;
-//   width: 347px;
-//   height: 115px;
-//   position: absolute;
-//   background-color: #e6e6e6;
-//   flex-direction: column;
-//   display: flex;
-// `;
-
-// const LoremIpsum = styled.span`
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 400;
-//   color: #121212;
-// `;
-
-// const TopUpPrice = styled.span`
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 400;
-//   color: #121212;
-//   margin-top: 10px;
-// `;
-
-// const LoremIpsumColumn = styled.div`
-//   width: 195px;
-//   flex-direction: column;
-//   display: flex;
-//   margin-bottom: 4px;
-// `;
-
-// const LoremIpsumColumnRow = styled.div`
-//   height: 46px;
-//   flex-direction: row;
-//   display: flex;
-//   margin-top: 13px;
-//   margin-left: 12px;
-//   margin-right: 55px;
-// `;
-
-// const ProductCode = styled.span`
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 400;
-//   color: #121212;
-//   margin-top: 8px;
-// `;
-
-// const TopUpPrice1 = styled.span`
-//   font-family: Roboto;
-//   font-style: normal;
-//   font-weight: 400;
-//   color: #121212;
-//   margin-left: 68px;
-// `;
-
-// const ProductCodeRow = styled.div`
-//   height: 24px;
-//   flex-direction: row;
-//   display: flex;
-//   margin-top: 18px;
-//   margin-left: 12px;
-//   margin-right: 111px;
-// `;
-
-// const ImageStack = styled.div`
-//   width: 351px;
-//   height: 497px;
-//   margin-top: 40px;
-//   position: relative;
-// `;
-
-// const Icon2Row = styled.div`
-//   height: 44px;
-//   flex-direction: row;
-//   display: flex;
-//   margin-top: 28px;
-//   margin-left: 9px;
-//   margin-right: 8px;
-// `;
-
-// export default SevenScreen;
-
 import React, { useState } from "react";
 import styled from "styled-components";
 import "../components/drop.css";
@@ -196,35 +7,26 @@ import { TbMessageCircle } from "react-icons/tb";
 import MaterialButtonDanger from "../components/MaterialButtonDanger";
 
 import { Link } from "react-router-dom";
+import { green } from "@material-ui/core/colors";
 
 function SevenScreen() {
-  React.useEffect(() => {
-    console.log("kkkkkkkkkkkkkkkk");
-  }, []);
+  React.useEffect(() => {}, []);
 
   return (
     <Container>
       <RectStack>
         <Dowell>
-          <TextHead>Hi, Christ Select From Menu</TextHead>
+          <TextHead>Selected Item</TextHead>
           <hr
             style={{
               marginLeft: "0",
               width: "95%",
+              height: "3px",
               marginTop: "5px",
               borderColor: "green",
             }}
           />
           <Image3 src={require("../assets/images/logo.png")}></Image3>
-
-          <CupertinoFooter2
-            style={{
-              height: 50,
-              width: 327,
-              position: "absolute",
-              top: 680,
-              left: 17,
-            }}></CupertinoFooter2>
 
           <Rect>
             <ImageStack>
@@ -233,62 +35,66 @@ function SevenScreen() {
                 <LoremIpsumColumnRow>
                   <LoremIpsumColumn>
                     <LoremIpsum>product detail and specification</LoremIpsum>
-                    <TopUpPrice>top up price</TopUpPrice>
+                    <TopUpPrice>top up price: $8</TopUpPrice>
                   </LoremIpsumColumn>
-                  <MaterialButtonDanger
-                    style={{
-                      height: 38,
-                      width: 56,
-                      borderWidth: 0,
-                      borderColor: "#000000",
-                      borderRadius: 12,
-                      shadowRadius: 0,
-                      marginLeft: 29,
-                      marginTop: 8,
-                      borderStyle: "solid",
-                      boxShadow: "5px 5px 0px  0.76px rgba(0,0,0,1) ",
-                    }}></MaterialButtonDanger>
+                  <Link to="/NineScreen">
+                    <MaterialButtonDanger
+                      style={{
+                        borderWidth: 0,
+                        borderColor: "#000000",
+                        borderRadius: 12,
+                        position: "absolute",
+                        right: "10px",
+                        boxShadow: "5px 5px 0px  0.76px rgba(0,0,0,1) ",
+                      }}></MaterialButtonDanger>
+                  </Link>
                 </LoremIpsumColumnRow>
                 <ProductCodeRow>
-                  <ProductCode>product code</ProductCode>
-                  <TopUpPrice1>top up price</TopUpPrice1>
+                  <ProductCode>product code: Z1008</ProductCode>
+                  <TopUpPrice1>Quantity: 3</TopUpPrice1>
                 </ProductCodeRow>
               </Rect2>
             </ImageStack>
-            {/* <EntypoIcon
-          name="chevron-with-circle-left"
-          style={{
-            color: "rgba(128,128,128,1)",
-            fontSize: 40,
-            height: 44,
-            width: 40,
-            marginTop: 9,
-            marginLeft: 292,
-          }}></EntypoIcon> */}
-            <BsInfoCircle />
+
+            <BsInfoCircle
+              style={{
+                position: "absolute",
+                top: "640px",
+                right: "1px",
+              }}
+              color="red"
+              size="20px"
+            />
             <Icon2Row>
-              {/* <MaterialCommunityIconsIcon
-            name="message-bulleted"
-            style={{
-              color: "rgba(128,128,128,1)",
-              fontSize: 40,
-              height: 44,
-              width: 40,
-            }}></MaterialCommunityIconsIcon> */}
-              <TbMessageCircle />
-              {/* <FeatherIcon
-            name="info"
-            style={{
-              color: "rgba(128,128,128,1)",
-              fontSize: 40,
-              height: 41,
-              width: 40,
-              marginLeft: 258,
-              marginTop: 3,
-            }}></FeatherIcon> */}
-              <BsArrowLeftCircle />
+              <TbMessageCircle
+                style={{
+                  position: "absolute",
+                  top: "640px",
+                  left: "1px",
+                }}
+                color="red"
+                size="20px"
+              />
+
+              <BsArrowLeftCircle
+                style={{
+                  position: "absolute",
+                  top: "570px",
+                  right: "20px",
+                }}
+                color="green"
+                size="40px"
+              />
             </Icon2Row>
           </Rect>
+          <CupertinoFooter2
+            style={{
+              height: 50,
+              width: 327,
+              position: "absolute",
+              top: 680,
+              left: 17,
+            }}></CupertinoFooter2>
         </Dowell>
       </RectStack>
     </Container>
@@ -354,16 +160,16 @@ const Rect = styled.div`
 `;
 
 const Image = styled.img`
-  top: 0px;
+  top: -50px;
   left: 12px;
   width: 339px;
-  height: 384px;
+  height: 370px;
   position: absolute;
-  object-fit: contain;
+  // object-fit: contain;
 `;
 
 const Rect2 = styled.div`
-  top: 382px;
+  top: 330px;
   left: 0px;
   width: 347px;
   height: 115px;
@@ -371,25 +177,26 @@ const Rect2 = styled.div`
   background-color: #e6e6e6;
   flex-direction: column;
   display: flex;
+  background-color: rgb(190, 244, 166);
 `;
 
 const LoremIpsum = styled.span`
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  color: #121212;
+  color: green;
 `;
 
 const TopUpPrice = styled.span`
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  color: #121212;
+  color: green;
   margin-top: 10px;
 `;
 
 const LoremIpsumColumn = styled.div`
-  width: 195px;
+  width: 270px;
   flex-direction: column;
   display: flex;
   margin-bottom: 4px;
@@ -408,7 +215,7 @@ const ProductCode = styled.span`
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  color: #121212;
+  color: green;
   margin-top: 8px;
 `;
 
@@ -416,17 +223,17 @@ const TopUpPrice1 = styled.span`
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
-  color: #121212;
-  margin-left: 68px;
+  color: green;
+  margin-left: 30px;
 `;
 
 const ProductCodeRow = styled.div`
-  height: 24px;
+  height: 10px;
   flex-direction: row;
-  display: flex;
-  margin-top: 18px;
-  margin-left: 12px;
-  margin-right: 111px;
+  // display: flex;
+  margin-top: 20px;
+  margin-left: 15px;
+  // margin-right: 107px;
 `;
 
 const ImageStack = styled.div`

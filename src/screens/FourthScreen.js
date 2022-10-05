@@ -19,21 +19,21 @@ function FourthScreen(props) {
 
   let dishdisplay = dishes[0].map((dish) => {
     return (
-      <div className="col-5 pt-3" key={dish._id}>
+      <div className="col-6 " key={dish._id}>
         <Link to="/SevenScreen">
           <div
             className="card"
             style={{
-              width: "8rem",
-              // height: "6rem",
+              width: "10rem",
+              height: "6rem",
               background: `url(${dish.product_image}) bottom right 15% no-repeat #46B6AC`,
             }}>
-            <div className="pt-4">{dish.dish_price}</div>
+            <div className="pt-5">{dish.dish_price}</div>
             <div>{dish.dish_code}</div>
           </div>
         </Link>
         <input
-          style={{ position: "relative", top: "-70px" }}
+          style={{ position: "relative", top: "-90px" }}
           onClick={() => {
             setprodDesc(dish.dish_name);
             setproddelTime("Delivery: " + dish.delivery_time);
@@ -81,7 +81,9 @@ function FourthScreen(props) {
           <Image3 src={require("../assets/images/logo.png")}></Image3>
           <Brand>brand of cafe, branch</Brand>
 
-          <div class="row p-4" style={{ height: "220px", overflowY: "scroll" }}>
+          <div
+            class="row p-3 "
+            style={{ height: "220px", overflowY: "scroll" }}>
             {dishdisplay}
           </div>
           <Rect>
@@ -451,7 +453,7 @@ const LoremIpsum = styled.span`
 `;
 const Brand = styled.span`
   font-family: Roboto;
-  top: 70px;
+  top: 55px;
   left: 0px;
   position: absolute;
   font-style: normal;

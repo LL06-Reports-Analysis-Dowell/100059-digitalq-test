@@ -4,14 +4,6 @@ import styled, { css } from "styled-components";
 function MaterialRadio1(props) {
   return (
     <Container {...props}>
-      {/* <MaterialCommunityIconsIcon
-        name={props.selected ? "radiobox-marked" : "radiobox-blank"}
-        style={{
-          color: "#3F51B5",
-          fontSize: 23,
-          lineHeight: "24px"
-        }}
-      ></MaterialCommunityIconsIcon> */}
       <input
         className="form-check-input position-relative"
         type="radio"

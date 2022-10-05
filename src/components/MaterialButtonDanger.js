@@ -4,22 +4,19 @@ import styled, { css } from "styled-components";
 function MaterialButtonDanger(props) {
   return (
     <Container {...props}>
-      <Caption>BUTTON</Caption>
+      <Caption>Order Now</Caption>
     </Container>
   );
 }
 
 const Container = styled.div`
   display: flex;
-  background-color: #F44336;
+  background-color: #f44336;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   border-radius: 2px;
-  min-width: 88px;
-  padding-left: 16px;
-  padding-right: 16px;
-  box-shadow: 0px 1px 5px  0.35px #000 ;
+  min-width: 100px;
 `;
 
 const Caption = styled.span`
