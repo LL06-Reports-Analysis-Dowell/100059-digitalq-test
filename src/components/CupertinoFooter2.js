@@ -1,16 +1,19 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
-import { IoReloadCircleSharp } from "react-icons/io5";
+import React from "react";
+import styled from "styled-components";
+
 import { TbPower, TbShieldCheck } from "react-icons/tb";
 import { FaUserCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function CupertinoFooter2(props) {
   return (
     <Container {...props}>
       <BtnWrapper1>
-        <ButtonOverlay>
-          <TbPower size="40px" />
-        </ButtonOverlay>
+        <Link to="/FifteenScreen">
+          <ButtonOverlay>
+            <TbPower size="40px" />
+          </ButtonOverlay>
+        </Link>
       </BtnWrapper1>
       <BtnWrapper3>
         <ButtonOverlay>
@@ -19,16 +22,16 @@ function CupertinoFooter2(props) {
       </BtnWrapper3>
       <BtnWrapper4>
         <ButtonOverlay>
-          <img src={require("../assets/images/reward.png")} />
+          <img src={require("../assets/images/reward.png")} alt="" />
         </ButtonOverlay>
       </BtnWrapper4>
       <BtnWrapper2>
         <ButtonOverlay>
-          <img src={require("../assets/images/dowellcart.png")} />
+          <img src={require("../assets/images/dowellcart.png")} alt="" />
         </ButtonOverlay>
       </BtnWrapper2>
       <Rect>
-        <img src={require("../assets/images/dowelluser.png")} />
+        <img src={require("../assets/images/dowelluser.png")} alt="" />
       </Rect>
       <BtnWrapper5>
         <ButtonOverlay>

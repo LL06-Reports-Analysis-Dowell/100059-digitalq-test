@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
-
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 import { TbPower, TbShieldCheck } from "react-icons/tb";
 import { FaUserCircle } from "react-icons/fa";
 import { BsArrowLeftCircle } from "react-icons/bs";
@@ -9,9 +9,11 @@ function CupertinoFooter2(props) {
   return (
     <Container {...props}>
       <BtnWrapper1>
-        <ButtonOverlay>
-          <TbPower size="40px" />
-        </ButtonOverlay>
+        <Link to="/FifteenScreen">
+          <ButtonOverlay>
+            <TbPower size="40px" />
+          </ButtonOverlay>
+        </Link>
       </BtnWrapper1>
       <BtnWrapper3>
         <ButtonOverlay>
@@ -25,7 +27,7 @@ function CupertinoFooter2(props) {
       </BtnWrapper4>
 
       <Rect>
-        <img src={require("../assets/images/dowelluser.png")} />
+        <img src={require("../assets/images/dowelluser.png")} alt="" />
       </Rect>
       <BtnWrapper5>
         <ButtonOverlay>
@@ -69,15 +71,6 @@ const BtnWrapper3 = styled.div`
 `;
 
 const BtnWrapper4 = styled.div`
-  flex: 1 1 0%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  display: flex;
-`;
-
-const BtnWrapper2 = styled.div`
   flex: 1 1 0%;
   flex-direction: column;
   align-items: center;
