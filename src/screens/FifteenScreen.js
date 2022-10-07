@@ -6,7 +6,7 @@ import CupertinoFooter2 from "../components/CupertinoFooter3";
 import { BsInfoCircle } from "react-icons/bs";
 import { TbMessageCircle } from "react-icons/tb";
 
-function NineScreen() {
+function FifteenScreen() {
   React.useEffect(() => {
     console.log("kkkkkkkkkkkkkkkk");
   }, []);
@@ -82,7 +82,6 @@ function NineScreen() {
                 </ProductCodeRow>
               </Rect6>
               <Rect16></Rect16>
-              <Rect21></Rect21>
             </Rect6Stack>
             <Rect12></Rect12>
           </Rect6StackRow>
@@ -394,28 +393,21 @@ const Rect6 = styled.div`
   position: absolute;
   top: -30px;
   left: -10px;
-  width: 330px;
+  width: 342px;
   height: 99px;
 
   background-color: rgb(190, 244, 166);
 `;
 
 const Rect16 = styled.div`
-  top: -27px;
+  top: -12px;
   left: -13px;
   width: 6px;
   height: 57px;
   position: absolute;
   background-color: rgba(126, 211, 33, 1);
 `;
-const Rect21 = styled.div`
-  top: -30px;
-  right: 5px;
-  width: 6px;
-  height: 57px;
-  position: absolute;
-  background-color: rgba(126, 211, 33, 1);
-`;
+
 const Rect6Stack = styled.div`
   width: 345px;
   height: 99px;
@@ -425,11 +417,6 @@ const Rect6Stack = styled.div`
 const Rect12 = styled.div`
   width: 6px;
   height: 57px;
-  top: -12px;
-  right: -13px;
-  width: 6px;
-  height: 57px;
-  position: absolute;
   background-color: rgba(126, 211, 33, 1);
 `;
 
@@ -655,4 +642,4 @@ const TopUpPrice = styled.span`
   color: green;
   margin-top: 10px;
 `;
-export default NineScreen;
+export default FifteenScreen;

@@ -10,13 +10,6 @@ import "react-phone-input-2/lib/style.css";
 import { Link } from "react-router-dom";
 
 function SecondScreen(props) {
-  const handleOnChange = (value) => {
-    console.log(value);
-    this.setState({ phone: value }, () => {
-      console.log(this.state.phone);
-    });
-  };
-
   return (
     <Container>
       <RectStack>

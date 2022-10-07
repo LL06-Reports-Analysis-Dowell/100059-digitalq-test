@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { IoReloadCircleSharp } from "react-icons/io5";
-import { AiFillPlusCircle } from "react-icons/ai";
+
 import { MdCancel } from "react-icons/md";
 import "../components/drop.css";
 import { Link } from "react-router-dom";
@@ -11,12 +11,6 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 function ThirdScreen(props) {
-  const handleOnChange = (value) => {
-    console.log(value);
-    this.setState({ phone: value }, () => {
-      console.log(this.state.phone);
-    });
-  };
   return (
     <Container>
       <RectStack>
@@ -218,15 +212,6 @@ const Image2Stack = styled.div`
   width: 350px;
   height: 393px;
   position: relative;
-`;
-
-const PlusIcon = styled.div`
-  width: 66px;
-  height: 100%;
-  position: absolute;
-
-  left: 300px;
-  object-fit: contain;
 `;
 
 const RectStack = styled.div`

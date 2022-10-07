@@ -48,9 +48,7 @@ function FourthScreen(props) {
     );
   });
   const Quantity = ["1", "2", "3", "4", "5", "6"];
-  React.useEffect(() => {
-    console.log(ProdCode, "kkkkkkkkkkkkkkkk");
-  }, []);
+  React.useEffect(() => {}, []);
 
   const settings = {
     className: "slider variable-width",
@@ -95,18 +93,20 @@ function FourthScreen(props) {
                 {"\n"}
                 {prodprice}
               </LoremIpsum>
-              <MaterialButtonDanger
-                style={{
-                  height: 36,
-                  width: 100,
-                  borderWidth: 0,
-                  borderColor: "#000000",
-                  borderRadius: 12,
-                  shadowRadius: 0,
-                  marginLeft: 80,
-                  borderStyle: "solid",
-                  boxShadow: "5px 5px 0px  0.76px rgba(0,0,0,1) ",
-                }}></MaterialButtonDanger>
+              <Link to="/NineScreen">
+                <MaterialButtonDanger
+                  style={{
+                    height: 36,
+                    width: 100,
+                    borderWidth: 0,
+                    borderColor: "#000000",
+                    borderRadius: 12,
+                    shadowRadius: 0,
+                    marginLeft: 80,
+                    borderStyle: "solid",
+                    boxShadow: "5px 5px 0px  0.76px rgba(0,0,0,1) ",
+                  }}></MaterialButtonDanger>
+              </Link>
             </LoremIpsumRow>
 
             <QuantityRow>
@@ -157,7 +157,6 @@ function FourthScreen(props) {
           </ProductCode>
           <Rect2>
             <div>
-              <h2></h2>
               <Slider {...settings}>
                 <div className="pr-2">
                   <img
@@ -237,20 +236,7 @@ const RectStack = styled.div`
   position: relative;
   border-radius: 10px;
 `;
-const TextInput = styled.input`
-  font-family: Roboto;
-  top: 46px;
-  left: 4px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 42px;
-  height: 25px;
-  font-size: 20px;
-  border: none;
-  background: transparent;
-`;
+
 const TextHead = styled.div`
   padding-left: 10px;
   padding-top: 20px;
@@ -279,158 +265,6 @@ const Dowell = styled.div`
   display: flex;
   border-style: solid;
   border-radius: 5%;
-`;
-const TextInput1 = styled.input`
-  font-family: Roboto;
-  left: 3px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 59px;
-  height: 25px;
-  font-size: 20px;
-  top: 72px;
-  border: none;
-  background: transparent;
-`;
-
-const MaterialCardWithButtons2Stack = styled.div`
-  top: 96px;
-  left: 19px;
-  width: 146px;
-  height: 101px;
-  position: absolute;
-`;
-
-const TextInput2 = styled.input`
-  font-family: Roboto;
-  left: 4px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 59px;
-  height: 25px;
-  font-size: 20px;
-  top: 72px;
-  border: none;
-  background: transparent;
-`;
-
-const TextInput2Stack = styled.div`
-  top: 0px;
-  left: 0px;
-  width: 146px;
-  height: 101px;
-  position: absolute;
-`;
-
-const TextInput3 = styled.input`
-  font-family: Roboto;
-  top: 46px;
-  left: 5px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 42px;
-  height: 25px;
-  font-size: 20px;
-  border: none;
-  background: transparent;
-`;
-
-const TextInput2StackStack = styled.div`
-  top: 96px;
-  left: 188px;
-  width: 146px;
-  height: 101px;
-  position: absolute;
-`;
-
-const TextInput4 = styled.input`
-  font-family: Roboto;
-  top: 46px;
-  left: 4px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 42px;
-  height: 25px;
-  font-size: 20px;
-  border: none;
-  background: transparent;
-`;
-
-const TextInput5 = styled.input`
-  font-family: Roboto;
-  left: 3px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 59px;
-  height: 25px;
-  font-size: 20px;
-  top: 71px;
-  border: none;
-  background: transparent;
-`;
-
-const MaterialCardWithButtons4Stack = styled.div`
-  top: 210px;
-  left: 192px;
-  width: 146px;
-  height: 101px;
-  position: absolute;
-`;
-
-const TextInput6 = styled.input`
-  font-family: Roboto;
-  left: 3px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 59px;
-  height: 25px;
-  font-size: 20px;
-  top: 71px;
-  border: none;
-  background: transparent;
-`;
-
-const TextInput6Stack = styled.div`
-  top: 0px;
-  left: 0px;
-  width: 146px;
-  height: 101px;
-  position: absolute;
-`;
-
-const TextInput7 = styled.input`
-  font-family: Roboto;
-  top: 46px;
-  left: 4px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 1);
-  width: 42px;
-  height: 25px;
-  font-size: 20px;
-  border: none;
-  background: transparent;
-`;
-
-const TextInput6StackStack = styled.div`
-  top: 210px;
-  left: 22px;
-  width: 146px;
-  height: 101px;
-  position: absolute;
 `;
 
 const Rect = styled.div`

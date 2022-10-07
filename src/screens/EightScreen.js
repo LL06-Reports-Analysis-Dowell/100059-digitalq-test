@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import "../components/drop.css";
 import CupertinoFooter2 from "../components/CupertinoFooter2";
