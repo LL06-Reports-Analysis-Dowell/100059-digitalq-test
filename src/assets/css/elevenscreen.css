@@ -1,0 +1,46 @@
+
+
+.background {
+    background-color: #c1e7c2;
+    border-style: solid;
+    font-family: Roboto;
+    width: 381px;
+    height: 738px;
+    margin-left: 30%;
+    padding: 5px;
+    
+}
+
+.texthead {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.boxx{
+    background: white;
+    height: fit-content;
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    padding-left: 7px;
+    border-style: solid;
+    border-color: green;
+    font-size: 10px;
+    border-radius: 20px;
+}
+
+.boxx .righttext{
+    display: flex;
+    justify-content: right;
+    padding-right: 2rem;
+}
+
+.lastimage{
+    height: 60px;
+    width: 60px;
+}
