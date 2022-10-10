@@ -29,7 +29,7 @@ export const ElevenScreen = () => {
             <div className="datasafety">
                 <div className="d-flex justify-content-left">
                     <div><TbShieldCheck size="30px" color="green" /></div>
-                    <div>Data Safety</div>
+                    <div className="ps-1">Data Safety</div>
                 </div>
                 <div className="boxx">
                     <div className="">
@@ -49,7 +49,7 @@ export const ElevenScreen = () => {
             <div className="personalPrivacy">
                 <div className="d-flex justify-content-left">
                     <div><BsEyeSlash size="30px" color="green" /></div>
-                    <div>Personal Privacy</div>
+                    <div className="ps-1">Personal Privacy</div>
                 </div>
                 <div className="boxx">
                     <div className="">
@@ -78,9 +78,10 @@ export const ElevenScreen = () => {
                 </div>
             </div>
             <br />
-
-            <div className="personalPrivacy">
-                <div className="boxx">
+            
+            {/* app details  */}
+            <div className="appdetails">
+                <div className="boxx p-2">
                     <div className="row">
                         <div className="col-4">
                             <p>App details</p>
