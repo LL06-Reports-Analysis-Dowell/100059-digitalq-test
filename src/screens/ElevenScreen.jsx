@@ -1,5 +1,6 @@
 import { Container } from "react-bootstrap"
-import CupertinoFooter2 from "../components/CupertinoFooter3";
+import CupertinoFooter2 from "../components/CupertinoFooter2";
+
 import "../assets/css/elevenscreen.css";
 import "../assets/css/utilities.css";
 import logo from "../assets/images/logo.png";
