@@ -295,14 +295,6 @@ const CloseApp = styled.span`
   margin-left: 273px;
 `;
 
-const Icon2Column = styled.div`
-  width: 60px;
-  flex-direction: column;
-  display: flex;
-  margin-left: 254px;
-  margin-bottom: 5px;
-`;
-
 const IconRow = styled.div`
   height: 62px;
   flex-direction: row;

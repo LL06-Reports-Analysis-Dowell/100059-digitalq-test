@@ -1,15 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import useFetch from "../api/useFetch";
 import { IoReloadCircleSharp } from "react-icons/io5";
 import { AiFillPlusCircle } from "react-icons/ai";
 import { MdCancel } from "react-icons/md";
-import BasicTable from "../components/BasicTable";
+import { ColorRing } from "react-loader-spinner";
 import Button from "@material-ui/core/Button";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { Link } from "react-router-dom";
 
-function SecondScreen(props) {
+function SecondScreen() {
+  const { data: dish, loading } = useFetch(
+    "https://100059.pythonanywhere.com/api/population/"
+  );
+
   return (
     <Container>
       <RectStack>
@@ -76,7 +81,62 @@ function SecondScreen(props) {
               </LoremIpsum4>
 
               <MyOrderState>my order state</MyOrderState>
-              <BasicTable></BasicTable>
+
+              <table className="table">
+                <thead>
+                  <tr className="bg-dark">
+                    <th scope="col">product</th>
+                    <th scope="col">code</th>
+                    <th scope="col">coupon</th>
+                    <th scope="col">counter</th>
+                    <th scope="col">Queue</th>
+                    <th scope="col">time</th>
+                  </tr>
+                </thead>
+                {loading ? (
+                  <div
+                    style={{ position: "absolute", left: "30%", top: "400px" }}>
+                    <ColorRing
+                      visible={true}
+                      height="150"
+                      width="150"
+                      ariaLabel="blocks-loading"
+                      wrapperStyle={{}}
+                      wrapperClass="blocks-wrapper"
+                      colors={[
+                        "#b8c480",
+                        "#B2A3B5",
+                        "#F4442E",
+                        "#51E5FF",
+                        "#429EA6",
+                      ]}
+                    />
+                  </div>
+                ) : (
+                  <tbody>
+                    {dish?.normal.data[0].map((dats) => (
+                      <tr key={dats._id}>
+                        <td>
+                          <img
+                            style={{
+                              height: "35px",
+                              width: "50px",
+                            }}
+                            src={dats.product_image}
+                            alt=""
+                          />
+                        </td>
+                        <td>{dats.dish_code}</td>
+                        <td>{dats.dish_cost}</td>
+                        <td>{dats.dish_price}</td>
+                        <td>{dats.dish_name}</td>
+                        <td>{dats.delivery_time}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                )}
+              </table>
+
               <OrderBtn>
                 {" "}
                 <Button

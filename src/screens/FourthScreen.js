@@ -2,25 +2,40 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "../components/drop.css";
 import CupertinoFooter2 from "../components/CupertinoFooter2";
-
+import useFetch from "../api/useFetch";
 import CupertinoFooter21 from "../components/CupertinoFooter21";
 import MaterialButtonDanger from "../components/MaterialButtonDanger";
 import Slider from "react-slick";
-import prodData from "../components/sample.json";
+
 import { Link } from "react-router-dom";
+import { ColorRing } from "react-loader-spinner";
 
 function FourthScreen(props) {
-  const dishes = prodData.normal.data;
-  let ProdCode = dishes[0].map((dish) => dish.dish_code);
-  let ProdName = dishes[0].map((dish) => dish.dish_name);
+  const {
+    data: dish,
+    loading,
+    ProdCode,
+    ProdName,
+  } = useFetch("http://100059.pythonanywhere.com/api/population/");
+
   const [prodDesc, setprodDesc] = useState("see product description");
   const [prodprice, setprodprice] = useState("price");
   const [proddelTime, setproddelTime] = useState("delivering time");
 
-  let dishdisplay = dishes[0].map((dish) => {
+  let dishdisplay = dish?.normal.data[0].map((dish) => {
     return (
       <div className="col-6 " key={dish._id}>
-        <Link to="/SevenScreen">
+        <Link
+          to={{
+            pathname: `/SevenScreen`,
+            query: {
+              dishimg: dish.product_image,
+              dishprice: dish.dish_price,
+              dishname: dish.dish_name,
+              dishcode: dish.dish_code,
+              quantities: 3,
+            },
+          }}>
           <div
             className="card"
             style={{
@@ -52,7 +67,6 @@ function FourthScreen(props) {
 
   const settings = {
     className: "slider variable-width",
-
     infinite: true,
     centerMode: true,
     slidesToShow: 1,
@@ -82,7 +96,27 @@ function FourthScreen(props) {
           <div
             class="row p-3 "
             style={{ height: "220px", overflowY: "scroll" }}>
-            {dishdisplay}
+            {loading ? (
+              <div style={{ position: "absolute", left: "30%", top: "90px" }}>
+                <ColorRing
+                  visible={true}
+                  height="120"
+                  width="120"
+                  ariaLabel="blocks-loading"
+                  wrapperStyle={{}}
+                  wrapperClass="blocks-wrapper"
+                  colors={[
+                    "#b8c480",
+                    "#B2A3B5",
+                    "#F4442E",
+                    "#51E5FF",
+                    "#429EA6",
+                  ]}
+                />
+              </div>
+            ) : (
+              dishdisplay
+            )}
           </div>
           <Rect>
             <LoremIpsumRow>
@@ -136,7 +170,7 @@ function FourthScreen(props) {
                 bordercolor: "green",
                 background: "transparent",
               }}>
-              {ProdName.map(MakeItem)}
+              {ProdName?.map(MakeItem)}
             </select>
           </ProductName>
           <ProductCode>
@@ -152,7 +186,7 @@ function FourthScreen(props) {
 
                 background: "transparent",
               }}>
-              {ProdCode.map(MakeItem)}
+              {ProdCode?.map(MakeItem)}
             </select>
           </ProductCode>
           <Rect2>

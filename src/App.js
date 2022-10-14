@@ -7,6 +7,7 @@ import FifthScreen from "./screens/FirstScreen";
 import SevenScreen from "./screens/SevenScreen";
 import NineScreen from "./screens/NineScreen";
 import FifteenScreen from "./screens/FifteenScreen";
+import Test from "./screens/Test";
 
 function App() {
   return (

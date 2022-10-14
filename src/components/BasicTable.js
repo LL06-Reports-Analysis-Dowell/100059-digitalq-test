@@ -1,56 +1,79 @@
-import React, { useMemo } from "react";
-import { useTable } from "react-table";
-import { COLUMNS } from "./Colums";
-import MOCK_DATA from "./MOCK_DATA.json";
-import MOCK_APP_DATA from "./sample.json";
-import "./table.css";
-import axios from "axios";
+// import React, { useMemo } from "react";
+// import { useTable } from "react-table";
+// import { COLUMNS } from "./Colums";
 
-function BasicTable() {
-  const baseURL = "https://100059.pythonanywhere.com/api/population/";
-  const [Order, setOrder] = React.useState(null);
+// import "./table.css";
 
-  React.useEffect(() => {
-    axios.get(baseURL).then((response) => {
-      setOrder(response.data);
-      console.log(response.data.normal.data, "thtttttttttttttt");
-    });
-  }, []);
+// function BasicTable(apidatas) {
+//   const columns = useMemo(() => COLUMNS, []);
+//   let data = useMemo(() => apidatas, [apidatas]);
 
-  const columns = useMemo(() => COLUMNS, []);
-  const data = useMemo(() => MOCK_DATA, []);
+//   const tableInstance = useTable({
+//     columns,
+//     data,
+//   });
 
-  const tableInstance = useTable({
-    columns,
-    data,
-  });
-  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
-    tableInstance;
+//   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+//     tableInstance;
+//   if (true) {
+//     return (
+//       <table {...getTableProps()}>
+//         <thead>
+//           {headerGroups.map((headerGroups) => (
+//             <tr {...headerGroups.getHeaderGroupProps()}>
+//               {headerGroups.headers.map((column) => (
+//                 <th {...column.getHeaderProps()}> {column.render("Header")}</th>
+//               ))}
+//             </tr>
+//           ))}
+//         </thead>
+//         <tbody {...getTableBodyProps()}>
+//           {rows.map((row) => {
+//             prepareRow(row);
+//             return (
+//               <tr {...row.getRowProps()}>
+//                 {row.cells.map((cell) => {
+//                   return (
+//                     <td {...cell.getCellProps()}>{cell.render("Cell")}</td>
+//                   );
+//                 })}
+//               </tr>
+//             );
+//           })}
+//         </tbody>
+//       </table>
+//     );
+//   } else {
+//   }
+// }
+
+// export default BasicTable;
+
+import React from "react";
+
+export default function BasicTable(dish) {
   return (
-    <table {...getTableProps()}>
-      <thead>
-        {headerGroups.map((headerGroups) => (
-          <tr {...headerGroups.getHeaderGroupProps()}>
-            {headerGroups.headers.map((column) => (
-              <th {...column.getHeaderProps()}> {column.render("Header")}</th>
-            ))}
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">cost</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
           </tr>
-        ))}
-      </thead>
-      <tbody {...getTableBodyProps()}>
-        {rows.map((row) => {
-          prepareRow(row);
-          return (
-            <tr {...row.getRowProps()}>
-              {row.cells.map((cell) => {
-                return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
-              })}
+        </thead>
+        <tbody>
+          {dish.normal.data[0].map((dats) => (
+            <tr key={dats._id}>
+              <th scope="row">{dats.dish_cost}</th>
+              <td>{dats.dish_price}</td>
+              <td>{dats.dish_name}</td>
+              <td>{dats.dish_code}</td>
             </tr>
-          );
-        })}
-      </tbody>
-    </table>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
-
-export default BasicTable;

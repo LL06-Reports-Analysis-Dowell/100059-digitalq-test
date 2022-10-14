@@ -61,13 +61,6 @@ const BtnWrapper1 = styled.div`
   display: flex;
 `;
 
-const Btn1Caption = styled.span`
-  font-family: Roboto;
-  background-color: transparent;
-  padding-top: 4px;
-  font-size: 12px;
-`;
-
 const BtnWrapper3 = styled.div`
   flex: 1 1 0%;
   flex-direction: column;
@@ -75,14 +68,6 @@ const BtnWrapper3 = styled.div`
   justify-content: center;
   border: none;
   display: flex;
-`;
-
-const Btn3Caption = styled.span`
-  font-family: Roboto;
-  background-color: transparent;
-  padding-top: 4px;
-  font-size: 12px;
-  color: #9e9e9e;
 `;
 
 const BtnWrapper4 = styled.div`
@@ -94,14 +79,6 @@ const BtnWrapper4 = styled.div`
   display: flex;
 `;
 
-const Btn4Caption = styled.span`
-  font-family: Roboto;
-  background-color: transparent;
-  padding-top: 4px;
-  font-size: 12px;
-  color: #9e9e9e;
-`;
-
 const BtnWrapper2 = styled.div`
   flex: 1 1 0%;
   flex-direction: column;
@@ -109,14 +86,6 @@ const BtnWrapper2 = styled.div`
   justify-content: center;
   border: none;
   display: flex;
-`;
-
-const Btn2Caption = styled.span`
-  font-family: Roboto;
-  background-color: transparent;
-  padding-top: 4px;
-  font-size: 12px;
-  color: #9e9e9e;
 `;
 
 const BtnWrapper5 = styled.div`
@@ -128,14 +97,6 @@ const BtnWrapper5 = styled.div`
   display: flex;
 `;
 
-const Btn5Caption = styled.span`
-  font-family: Roboto;
-  background-color: transparent;
-  padding-top: 4px;
-  font-size: 12px;
-  color: #9e9e9e;
-`;
-
 const BtnWrapper6 = styled.div`
   flex: 1 1 0%;
   flex-direction: column;
@@ -143,14 +104,6 @@ const BtnWrapper6 = styled.div`
   justify-content: center;
   border: none;
   display: flex;
-`;
-
-const Btn7 = styled.span`
-  font-family: Roboto;
-  background-color: transparent;
-  padding-top: 4px;
-  font-size: 12px;
-  color: #9e9e9e;
 `;
 
 export default CupertinoFooter21;

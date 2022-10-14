@@ -5,10 +5,13 @@ import CupertinoFooter2 from "../components/CupertinoFooter2";
 import { BsArrowLeftCircle, BsInfoCircle } from "react-icons/bs";
 import { TbMessageCircle } from "react-icons/tb";
 import MaterialButtonDanger from "../components/MaterialButtonDanger";
+import { useParams } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
-function SevenScreen() {
+function SevenScreen(props) {
+  const query = props?.location.query;
+  console.log(query?.query);
   React.useEffect(() => {}, []);
 
   return (
