@@ -1,9 +1,8 @@
-import { Container } from "react-bootstrap"
 import CupertinoFooter2 from "../components/CupertinoFooter2";
+import { Headerr } from "../components/Headrr";
 
 import "../assets/css/elevenscreen.css";
 import "../assets/css/utilities.css";
-import logo from "../assets/images/logo.png";
 import { TbPower, TbShieldCheck } from "react-icons/tb";
 import { BsEyeSlash } from "react-icons/bs";
 import rightcircle from "../assets/images/rightcircle.png"
@@ -12,20 +11,7 @@ import newupdate from "../assets/images/newupdate.png"
 export const ElevenScreen = () => {
     return (
         <div className="background">
-            <br />
-            <div>
-                <div className="d-flex justify-content-between">
-                    <div><p className="texthead">Data Safety and Personal Privacy</p></div>
-                    <div><img className="logo" src={logo} alt="image" /></div>
-                </div>
-            </div>
-            <hr
-                style={{
-                    width: "95%",
-                    borderColor: "green",
-                    marginTop: "-10px",
-                }}
-            />
+            <Headerr />
             {/* Data safety  */}
             <div className="datasafety">
                 <div className="d-flex justify-content-left">

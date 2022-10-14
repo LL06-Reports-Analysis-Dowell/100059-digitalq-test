@@ -1,4 +1,11 @@
-/* .righttext{
-    text-align: right;
-    padding-right: 2rem;
-} */
+.background {
+    background-color: #c1e7c2;
+    border-style: solid;
+    font-family: Roboto;
+    width: 381px;
+    min-height: 738px;
+    height: fit-content;
+    margin-left: 30%;
+    padding: 5px;
+    
+}
