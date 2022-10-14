@@ -81,62 +81,72 @@ function SecondScreen() {
               </LoremIpsum4>
 
               <MyOrderState>my order state</MyOrderState>
+              <tabl
+                style={{
+                  width: "100%",
+                  height: "200px",
 
-              <table className="table">
-                <thead>
-                  <tr className="bg-dark">
-                    <th scope="col">product</th>
-                    <th scope="col">code</th>
-                    <th scope="col">coupon</th>
-                    <th scope="col">counter</th>
-                    <th scope="col">Queue</th>
-                    <th scope="col">time</th>
-                  </tr>
-                </thead>
-                {loading ? (
-                  <div
-                    style={{ position: "absolute", left: "30%", top: "400px" }}>
-                    <ColorRing
-                      visible={true}
-                      height="150"
-                      width="150"
-                      ariaLabel="blocks-loading"
-                      wrapperStyle={{}}
-                      wrapperClass="blocks-wrapper"
-                      colors={[
-                        "#b8c480",
-                        "#B2A3B5",
-                        "#F4442E",
-                        "#51E5FF",
-                        "#429EA6",
-                      ]}
-                    />
-                  </div>
-                ) : (
-                  <tbody>
-                    {dish?.normal.data[0].map((dats) => (
-                      <tr key={dats._id}>
-                        <td>
-                          <img
-                            style={{
-                              height: "35px",
-                              width: "50px",
-                            }}
-                            src={dats.product_image}
-                            alt=""
-                          />
-                        </td>
-                        <td>{dats.dish_code}</td>
-                        <td>{dats.dish_cost}</td>
-                        <td>{dats.dish_price}</td>
-                        <td>{dats.dish_name}</td>
-                        <td>{dats.delivery_time}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                )}
-              </table>
-
+                  overflow: "auto",
+                }}>
+                <table className="table">
+                  <thead>
+                    <tr className="bg-dark text-white">
+                      <th scope="col">product</th>
+                      <th scope="col">code</th>
+                      <th scope="col">coupon</th>
+                      <th scope="col">counter</th>
+                      <th scope="col">Queue</th>
+                      <th scope="col">time</th>
+                    </tr>
+                  </thead>
+                  {loading ? (
+                    <div
+                      style={{
+                        position: "absolute",
+                        left: "30%",
+                        top: "400px",
+                      }}>
+                      <ColorRing
+                        visible={true}
+                        height="150"
+                        width="150"
+                        ariaLabel="blocks-loading"
+                        wrapperStyle={{}}
+                        wrapperClass="blocks-wrapper"
+                        colors={[
+                          "#b8c480",
+                          "#B2A3B5",
+                          "#F4442E",
+                          "#51E5FF",
+                          "#429EA6",
+                        ]}
+                      />
+                    </div>
+                  ) : (
+                    <tbody>
+                      {dish?.normal.data[0].map((dats) => (
+                        <tr key={dats._id}>
+                          <td>
+                            <img
+                              style={{
+                                height: "35px",
+                                width: "50px",
+                              }}
+                              src={dats.product_image}
+                              alt=""
+                            />
+                          </td>
+                          <td>{dats.dish_code}</td>
+                          <td>{dats.dish_cost}</td>
+                          <td>{dats.dish_price}</td>
+                          <td>{dats.dish_name}</td>
+                          <td>{dats.delivery_time}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  )}
+                </table>
+              </tabl>
               <OrderBtn>
                 {" "}
                 <Button

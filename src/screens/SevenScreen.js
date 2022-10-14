@@ -9,9 +9,7 @@ import { useParams } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
-function SevenScreen(props) {
-  const query = props?.location.query;
-  console.log(query?.query);
+function SevenScreen() {
   React.useEffect(() => {}, []);
 
   return (
