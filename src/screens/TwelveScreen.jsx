@@ -1,5 +1,6 @@
 import CupertinoFooter2 from "../components/CupertinoFooter2";
 import { Headerr } from "../components/Headrr";
+import logo from "../assets/images/logo.png";
 
 import "../assets/css/twelvescreen.css";
 import "../assets/css/utilities.css";
@@ -8,7 +9,19 @@ export const TwelveScreen = () => {
     return (
         <div className="background">
             <div >
-                <Headerr />
+                <div>
+                    <div className="d-flex justify-content-between">
+                        <div><p className="texthead">Security Policy</p></div>
+                        <div><img className="logo" src={logo} alt="image" /></div>
+                    </div>
+                </div>
+                <hr
+                    style={{
+                        width: "95%",
+                        borderColor: "green",
+                        marginTop: "-10px",
+                    }}
+                />
             </div>
 
             <div className="ps-2 pt-3">
