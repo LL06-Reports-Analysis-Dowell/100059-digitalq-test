@@ -27,25 +27,8 @@ export const FourteenScreen = () => {
             <div className="ps-2 pt-3">
                 <b>Disclaimer</b>
                 <p>
-                    Are QR Codes secure?
+                    The information contained in this App is for general information purposes only. The materials on this App may contain inaccuracies and typographical errors and while we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability or availability with respect to the App or the information, products, services, or related graphics contained on the App for any purpose. Any reliance you place on such information is therefore strictly at your own risk. Dowell reserves the right, in its sole discretion, to correct any error or omission in any portion of the site. Dowell may make any other changes to the site, the materials, and the products, programs, services, or prices described in this App at any time without notice. The information, materials, and the software made available on this App, are provided "As Is" without any representation or warranty, express or implied, of any kind, including, but not limited to, warranties of merchantability, non-infringement, or fitness for any particular purpose, some jurisdictions do not allow for the exclusion of implied warranties, so the above exclusions may not apply to you. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this App. Through this App, you are able to link to other Apps which are not under the control of Dowell.
 
-                    QR Codes are secure. Static QR Codes are machine-readable and the content inside them cannot be changed once generated. The content inside a Dynamic QR Code, however, can be changed, but you would need access to the user account that created them in the first place.
-
-                    Can QR Codes be hacked?
-
-                    The actual QR Codes themselves can’t be hacked. This is because they are built using a square matrix with pixelated dots so these dots would have to be changed in order to be “hacked.”
-
-                    WiFi QR Code technology is not a security risk alone. Security issues arise from the information connected to the QR Code.
-
-                    Potential WiFi QR Code security issues
-
-                    There are some associated security risks with scanning QR Codes if they don’t come from a trusted sender. There are three types of security risks related to QR Codes, but keep in mind that these security risks have nothing to do with the technology of QR Codes themselves.
-
-                    Phishing
-
-                    Phishing is a common way that hackers break into websites. Usually, they start by sending a fake login page for the website via email. An unsuspecting person may find this email quite convincing as they can include company logos and similar graphics styles so it does look like a real company. Once this login information is sent, this allows the attacker easy access to the website.
-
-                    Where this comes into play with QR Codes is during the scanning process.
                 </p>
             </div>
 
