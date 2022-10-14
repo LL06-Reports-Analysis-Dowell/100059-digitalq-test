@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/100059-digitalq-test/static/css/main.baff02fe.css",
-    "main.js": "/100059-digitalq-test/static/js/main.7363921e.js",
+    "main.css": "/100059-digitalq-test/static/css/main.009e05d5.css",
+    "main.js": "/100059-digitalq-test/static/js/main.72a7ec8c.js",
     "static/js/787.7efd31bd.chunk.js": "/100059-digitalq-test/static/js/787.7efd31bd.chunk.js",
     "static/media/cardImage1.png": "/100059-digitalq-test/static/media/cardImage1.18de07683ffe87a67cd8.png",
     "static/media/do1.png": "/100059-digitalq-test/static/media/do1.246740eead5bcc6ba567.png",
+    "static/media/do3.gif": "/100059-digitalq-test/static/media/do3.43c528009e69fc8f7346.gif",
     "static/media/Roboto-BlackItalic.ttf": "/100059-digitalq-test/static/media/Roboto-BlackItalic.6a93c6dcc83d3e09b22e.ttf",
     "static/media/Roboto-Italic.ttf": "/100059-digitalq-test/static/media/Roboto-Italic.801622d3d97b471ac0a1.ttf",
     "static/media/Roboto-MediumItalic.ttf": "/100059-digitalq-test/static/media/Roboto-MediumItalic.a186f4b1646a6b07d3ec.ttf",
@@ -29,17 +30,19 @@
     "static/media/food.jpg": "/100059-digitalq-test/static/media/food.ff87d4a500a90fad7deb.jpg",
     "static/media/MaterialIcons-Regular.woff2": "/100059-digitalq-test/static/media/MaterialIcons-Regular.4bf70dc7483474243403.woff2",
     "static/media/do3.png": "/100059-digitalq-test/static/media/do3.57cae71e40cd16f537c9.png",
+    "static/media/doss.png": "/100059-digitalq-test/static/media/doss.cca25f641e079029e167.png",
+    "static/media/do5.png": "/100059-digitalq-test/static/media/do5.a1c19e71d5ae454a4fa6.png",
     "static/media/slick.svg": "/100059-digitalq-test/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/100059-digitalq-test/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/100059-digitalq-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/100059-digitalq-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/100059-digitalq-test/index.html",
-    "main.baff02fe.css.map": "/100059-digitalq-test/static/css/main.baff02fe.css.map",
-    "main.7363921e.js.map": "/100059-digitalq-test/static/js/main.7363921e.js.map",
+    "main.009e05d5.css.map": "/100059-digitalq-test/static/css/main.009e05d5.css.map",
+    "main.72a7ec8c.js.map": "/100059-digitalq-test/static/js/main.72a7ec8c.js.map",
     "787.7efd31bd.chunk.js.map": "/100059-digitalq-test/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.baff02fe.css",
-    "static/js/main.7363921e.js"
+    "static/css/main.009e05d5.css",
+    "static/js/main.72a7ec8c.js"
   ]
 }
