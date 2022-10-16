@@ -8,7 +8,9 @@ import "../assets/css/utilities.css";
 export const TwelveScreen = () => {
     return (
         <div className="background">
-            <div >
+            {/* Header component  */}
+            <Headerr text='Security Policy' />
+            {/* <div >
                 <div>
                     <div className="d-flex justify-content-between">
                         <div><p className="texthead">Security Policy</p></div>
@@ -22,7 +24,7 @@ export const TwelveScreen = () => {
                         marginTop: "-10px",
                     }}
                 />
-            </div>
+            </div> */}
 
             <div className="ps-2 pt-3">
                 <b>Security Policy</b>

@@ -12,7 +12,8 @@ import { Link } from "react-router-dom";
 export const ElevenScreen = () => {
     return (
         <div className="background">
-            <Headerr />
+            {/* Header component  */}
+            <Headerr text='Data Safety and Personal Privacy'/>
             {/* Data safety  */}
             <div className="datasafety">
                 <div className="d-flex justify-content-left">

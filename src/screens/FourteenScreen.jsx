@@ -8,7 +8,9 @@ import "../assets/css/utilities.css";
 export const FourteenScreen = () => {
     return (
         <div className="background">
-            <div >
+            {/* Header component  */}
+            <Headerr text='Disclaimer' />
+            {/* <div >
                 <div>
                     <div className="d-flex justify-content-between">
                         <div><p className="texthead">Disclaimer</p></div>
@@ -22,7 +24,7 @@ export const FourteenScreen = () => {
                         marginTop: "-10px",
                     }}
                 />
-            </div>
+            </div> */}
 
             <div className="ps-2 pt-3">
                 <b>Disclaimer</b>
