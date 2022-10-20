@@ -1,0 +1,53 @@
+.boxx{
+    background: white;
+    height: fit-content;
+    padding: 1rem;
+    border-style: solid;
+    border-color: green;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.comment{
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(84, 84, 84);
+    text-decoration: none;
+    border-style: solid;
+    border-color: green;
+    border-radius: 25px;
+    /* padding-top: 100px; */
+}
+
+.btnicon{
+    background: #c1e7c2;
+    border-radius: 25px;
+    text-align: center;
+    border-color: green;
+    border-style: solid;
+    color: green;
+    padding: 2px
+}
+
+.thankyou{
+    height: 125px;
+    width: 165px;
+    text-align: center;
+    align-content: center;
+    
+}
+
+.dowell{
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(0, 128, 55);
+    text-decoration: none;
+}
+
+.exit{
+    width: 80px;
+    font-weight: 700;
+    font-style: italic;
+    color: rgb(255, 76, 0);
+    text-decoration: none;
+}
