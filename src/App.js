@@ -11,6 +11,7 @@ import { TwelveScreen } from "./screens/TwelveScreen";
 import { ThirteenScreen } from "./screens/ThirteenScreen";
 import { FourteenScreen } from "./screens/FourteenScreen";
 import { FifteenScreen } from "./screens/FifteenScreen";
+import { SixteenScreen } from "./screens/SixteenScreen";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Route path="/ThirteenScreen" element={<ThirteenScreen />} />
       <Route path="/FourteenScreen" element={<FourteenScreen />} />
       <Route path="/FifteenScreen" element={<FifteenScreen />} />
+      <Route path="/SixteenScreen" element={<SixteenScreen />} />
     </Routes>
   );
 }

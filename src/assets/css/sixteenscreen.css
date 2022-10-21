@@ -1,0 +1,48 @@
+.ht{
+    padding-top: 70%;
+    text-align: center;
+}
+.logintext {
+    font-weight: 700;
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(0, 128, 55);
+    text-decoration: none;
+}
+
+.talk{
+    font-weight: 400;
+    font-size: 26px;
+    font-style: normal;
+    color: rgb(0, 128, 55);
+    text-decoration: none;
+}
+
+.loginmain{
+    display: flex;
+    justify-content: center;
+}
+/*  */
+.loginbtn{
+    width: 220px;
+    height: auto;
+    padding: 3px;
+    background-color: rgb(215, 239, 225);;
+    border-radius: 15px;
+    
+    font-weight: 700;
+    font-style: normal;
+    /* color: rgb(0, 128, 55); */
+    text-decoration: underline;
+    font-family: "YAD7QhG2T6o 0", _fb_, auto;
+    font-size: 44.0951px;
+    color: rgb(0, 128, 55);
+    line-height: 52px;
+    letter-spacing: 0em;
+    --para-spacing: 0;
+    text-transform: none;
+    --head-indent: 0;
+    --numeric-list-marker: none;
+    list-style-type: none;
+    /* background-color: aliceblue; */
+}
