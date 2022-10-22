@@ -5,7 +5,7 @@ import CupertinoFooter2 from "../components/CupertinoFooter2";
 import { BsInfoCircle } from "react-icons/bs";
 import { TbMessageCircle } from "react-icons/tb";
 
-function Test() {
+function TwentyOneScreen() {
   return (
     <Container>
       <RectStack2>
@@ -305,4 +305,4 @@ const Confirm2 = styled.span`
   margin-left: 26px;
 `;
 
-export default Test;
+export default TwentyOneScreen;
