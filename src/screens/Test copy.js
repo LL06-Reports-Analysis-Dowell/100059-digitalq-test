@@ -151,7 +151,7 @@ const A2 = styled.span`
   font-weight: 400;
   color: rgba(65, 117, 5, 1);
   font-size: 22px;
-
+  margin-top: 83px;
   align-self: center;
 `;
 
@@ -248,21 +248,16 @@ const Rect2 = styled.div`
   background-color: rgba(255, 255, 255, 1);
   flex-direction: column;
   display: flex;
-  border-left: 5px solid;
-  border-left-color: green;
-  border-right: 5px solid;
-  border-right-color: green;
   margin-top: 24px;
   margin-left: 54px;
 `;
 
 const LoremIpsum2 = styled.span`
   font-family: Roboto;
-  padding-bottom: 10px;
-  margin: auto;
+  font-style: normal;
   font-weight: 400;
   color: #121212;
-  margin-top: 13px;
+  margin-top: 16px;
   margin-left: 63px;
 `;
 

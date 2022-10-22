@@ -12,7 +12,7 @@ import Test from "./screens/Test";
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={<FirstScreen />} />
+      <Route exact path="/" element={<Test />} />
       <Route path="/SecondScreen" element={<SecondScreen />} />
       <Route path="/ThirdScreen" element={<ThirdScreen />} />
       <Route path="/FourthScreen" element={<FourthScreen />} />
