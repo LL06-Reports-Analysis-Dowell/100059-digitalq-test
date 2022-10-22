@@ -5,7 +5,7 @@ import CupertinoFooter2 from "../components/CupertinoFooter2";
 import { BsInfoCircle } from "react-icons/bs";
 import { TbMessageCircle } from "react-icons/tb";
 
-function Test() {
+function NineteenScreen() {
   return (
     <Container>
       <RectStack2>
@@ -21,26 +21,25 @@ function Test() {
             }}
           />
           <Image13 src={require("../assets/images/logo.png")}></Image13>
+          <A2>&lt;Account Number of{"\n"} shop&gt;</A2>
+          <IfscCodeOfShop>&lt;IFSC code of shop&gt;</IfscCodeOfShop>
+          <GstOfShop>&lt;GST of Shop&gt;</GstOfShop>
+          <NameOfShop>&lt;Name of Shop&gt;</NameOfShop>
           <Rect>
             <TotalRow>
               <Total>Total</Total>
-              <LoremIpsum>&lt;123 &gt;</LoremIpsum>
+              <LoremIpsum>&lt;123 $&gt;</LoremIpsum>
             </TotalRow>
             <PhoneOfCustomer>&lt;Phone of customer&gt;</PhoneOfCustomer>
+            <PhoneOfCustomer2>
+              Open your bank{"\n"} account page and do{"\n"} online transfer
+            </PhoneOfCustomer2>
           </Rect>
           <Rect2>
-            <LoremIpsum2>Enter Membership number to continue</LoremIpsum2>
+            <LoremIpsum2>Receipt number from Bank</LoremIpsum2>
           </Rect2>
-          <ConfirmStack>
-            <Confirm>Confirm</Confirm>
-            <LoremIpsum3>Receipt number from Bank</LoremIpsum3>
-            <Rect4>
-              <EnterOtp>Enter OTP</EnterOtp>
-            </Rect4>
-          </ConfirmStack>
-          <ResendOtp>resend otp</ResendOtp>
           <Rect3>
-            <Confirm2>Confirm</Confirm2>
+            <Confirm>Confirm</Confirm>
           </Rect3>
           <IconRow>
             <BsInfoCircle
@@ -95,6 +94,7 @@ const IconRow = styled.div`
   margin-left: 6px;
   margin-right: 4px;
 `;
+
 const Container = styled.div`
   display: flex;
   // border-width: 0px;
@@ -145,14 +145,54 @@ const Dowell = styled.div`
   border-radius: 5%;
 `;
 
+const A2 = styled.span`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(65, 117, 5, 1);
+  font-size: 22px;
+
+  align-self: center;
+`;
+
+const IfscCodeOfShop = styled.span`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(65, 117, 5, 1);
+  font-size: 22px;
+  margin-top: 24px;
+  margin-left: 88px;
+`;
+
+const GstOfShop = styled.span`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(65, 117, 5, 1);
+  font-size: 22px;
+  margin-top: 83px;
+  margin-left: 110px;
+`;
+
+const NameOfShop = styled.span`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: rgba(65, 117, 5, 1);
+  font-size: 22px;
+  margin-top: -67px;
+  margin-left: 108px;
+`;
+
 const Rect = styled.div`
-  width: 265px;
-  height: 110px;
+  width: 275px;
+  height: 234px;
   background-color: rgba(190, 244, 166, 1);
   flex-direction: column;
   display: flex;
-  margin-top: 19px;
-  margin-left: 40px;
+  margin-top: 60px;
+  margin-left: 49px;
 `;
 
 const Total = styled.span`
@@ -169,16 +209,16 @@ const LoremIpsum = styled.span`
   font-weight: 400;
   color: #121212;
   font-size: 18px;
-  margin-left: 15px;
+  margin-left: 14px;
 `;
 
 const TotalRow = styled.div`
   height: 21px;
   flex-direction: row;
   display: flex;
-  margin-top: 22px;
-  margin-left: 74px;
-  margin-right: 73px;
+  margin-top: 28px;
+  margin-left: 79px;
+  margin-right: 79px;
 `;
 
 const PhoneOfCustomer = styled.span`
@@ -188,96 +228,42 @@ const PhoneOfCustomer = styled.span`
   color: #121212;
   font-size: 22px;
   margin-top: 18px;
-  margin-left: 38px;
+  margin-left: 43px;
+`;
+
+const PhoneOfCustomer2 = styled.span`
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  color: #121212;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: 32px;
 `;
 
 const Rect2 = styled.div`
-  width: 275px;
-  border-left: 5px solid;
-  border-left-color: green;
-  border-right: 5px solid;
-  border-right-color: green;
+  width: 270px;
   height: 47px;
   background-color: rgba(255, 255, 255, 1);
   flex-direction: column;
   display: flex;
-  margin-top: 219px;
+  border-left: 5px solid;
+  border-left-color: green;
+  border-right: 5px solid;
+  border-right-color: green;
+  margin-top: 24px;
   margin-left: 54px;
 `;
 
 const LoremIpsum2 = styled.span`
   font-family: Roboto;
-  font-style: italic;
-  font-weight: ;
-  color: #121212;
-  margin-top: 20px;
-  margin-left: 11px;
-`;
-
-const Confirm = styled.span`
-  font-family: Roboto;
-  top: 20px;
-  left: 74px;
-  position: absolute;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  font-size: 18px;
-  text-decoration-line: underline;
-`;
-
-const LoremIpsum3 = styled.span`
-  font-family: Roboto;
-  top: 16px;
-  left: 57px;
-
-  position: absolute;
-  font-style: normal;
+  padding-bottom: 10px;
+  margin: auto;
   font-weight: 400;
   color: #121212;
-`;
-
-const Rect4 = styled.div`
-  top: 0px;
-  left: -20px;
-  width: 275px;
-  height: 37px;
-  position: absolute;
-  background-color: rgba(255, 255, 255, 1);
-  flex-direction: column;
-  display: flex;
-  border-left: 5px solid;
-  border-left-color: green;
-  border-right: 5px solid;
-  border-right-color: green;
-`;
-
-const EnterOtp = styled.span`
-  font-family: Roboto;
-  font-style: italic;
-  font-weight: ;
-  padding-bottom: 5px;
-  color: #121212;
-  padding-bottom: 5px;
-  margin-top: 16px;
-  margin-left: 37px;
-`;
-
-const ConfirmStack = styled.div`
-  width: 275px;
-  height: 47px;
-  margin-top: 39px;
-  margin-left: 75px;
-  position: relative;
-`;
-
-const ResendOtp = styled.span`
-  font-family: Roboto;
-  font-style: italic;
-  font-weight: ;
-  color: #121212;
-  margin-top: -70px;
-  margin-left: 273px;
+  margin-top: 13px;
+  margin-left: 63px;
 `;
 
 const Rect3 = styled.div`
@@ -289,20 +275,20 @@ const Rect3 = styled.div`
   border-radius: 23px;
   flex-direction: column;
   display: flex;
-  margin-top: 135px;
-  margin-left: 143px;
+  margin-top: 26px;
+  margin-left: 130px;
   border-style: solid;
 `;
 
-const Confirm2 = styled.span`
+const Confirm = styled.span`
   font-family: Roboto;
-  font-style: italic;
-  font-weight: ;
+  font-style: normal;
+  font-weight: 400;
   color: rgba(255, 255, 255, 1);
   font-size: 18px;
   text-decoration-line: underline;
-  margin-top: 11px;
-  margin-left: 26px;
+  margin-top: 15px;
+  margin-left: 29px;
 `;
 
-export default Test;
+export default NineteenScreen;

@@ -21,26 +21,6 @@ function Test() {
             }}
           />
           <Image13 src={require("../assets/images/logo.png")}></Image13>
-          <A2>&lt;Account Number of{"\n"} shop&gt;</A2>
-          <IfscCodeOfShop>&lt;IFSC code of shop&gt;</IfscCodeOfShop>
-          <GstOfShop>&lt;GST of Shop&gt;</GstOfShop>
-          <NameOfShop>&lt;Name of Shop&gt;</NameOfShop>
-          <Rect>
-            <TotalRow>
-              <Total>Total</Total>
-              <LoremIpsum>&lt;123 $&gt;</LoremIpsum>
-            </TotalRow>
-            <PhoneOfCustomer>&lt;Phone of customer&gt;</PhoneOfCustomer>
-            <PhoneOfCustomer2>
-              Open your bank{"\n"} account page and do{"\n"} online transfer
-            </PhoneOfCustomer2>
-          </Rect>
-          <Rect2>
-            <LoremIpsum2>Receipt number from Bank</LoremIpsum2>
-          </Rect2>
-          <Rect3>
-            <Confirm>Confirm</Confirm>
-          </Rect3>
           <IconRow>
             <BsInfoCircle
               style={{
@@ -94,7 +74,6 @@ const IconRow = styled.div`
   margin-left: 6px;
   margin-right: 4px;
 `;
-
 const Container = styled.div`
   display: flex;
   // border-width: 0px;
@@ -143,147 +122,6 @@ const Dowell = styled.div`
   display: flex;
   border-style: solid;
   border-radius: 5%;
-`;
-
-const A2 = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(65, 117, 5, 1);
-  font-size: 22px;
-  margin-top: 83px;
-  align-self: center;
-`;
-
-const IfscCodeOfShop = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(65, 117, 5, 1);
-  font-size: 22px;
-  margin-top: 24px;
-  margin-left: 88px;
-`;
-
-const GstOfShop = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(65, 117, 5, 1);
-  font-size: 22px;
-  margin-top: 83px;
-  margin-left: 110px;
-`;
-
-const NameOfShop = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(65, 117, 5, 1);
-  font-size: 22px;
-  margin-top: -67px;
-  margin-left: 108px;
-`;
-
-const Rect = styled.div`
-  width: 275px;
-  height: 234px;
-  background-color: rgba(190, 244, 166, 1);
-  flex-direction: column;
-  display: flex;
-  margin-top: 60px;
-  margin-left: 49px;
-`;
-
-const Total = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: #121212;
-  font-size: 18px;
-`;
-
-const LoremIpsum = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: #121212;
-  font-size: 18px;
-  margin-left: 14px;
-`;
-
-const TotalRow = styled.div`
-  height: 21px;
-  flex-direction: row;
-  display: flex;
-  margin-top: 28px;
-  margin-left: 79px;
-  margin-right: 79px;
-`;
-
-const PhoneOfCustomer = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: #121212;
-  font-size: 22px;
-  margin-top: 18px;
-  margin-left: 43px;
-`;
-
-const PhoneOfCustomer2 = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: #121212;
-  font-size: 22px;
-  text-align: center;
-  margin-top: 35px;
-  margin-left: 32px;
-`;
-
-const Rect2 = styled.div`
-  width: 270px;
-  height: 47px;
-  background-color: rgba(255, 255, 255, 1);
-  flex-direction: column;
-  display: flex;
-  margin-top: 24px;
-  margin-left: 54px;
-`;
-
-const LoremIpsum2 = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: #121212;
-  margin-top: 16px;
-  margin-left: 63px;
-`;
-
-const Rect3 = styled.div`
-  width: 118px;
-  height: 50px;
-  background-color: rgba(65, 117, 5, 1);
-  border-width: 0px;
-  border-color: #000000;
-  border-radius: 23px;
-  flex-direction: column;
-  display: flex;
-  margin-top: 26px;
-  margin-left: 130px;
-  border-style: solid;
-`;
-
-const Confirm = styled.span`
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 1);
-  font-size: 18px;
-  text-decoration-line: underline;
-  margin-top: 15px;
-  margin-left: 29px;
 `;
 
 export default Test;
