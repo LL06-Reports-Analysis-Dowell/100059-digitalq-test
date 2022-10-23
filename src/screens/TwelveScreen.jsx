@@ -16,7 +16,7 @@ export const TwelveScreen = () => {
         <Container>
             <RectStack>
                 <Dowell>
-                    <Headerr text='Security Policy' className="text-primary"/>
+                    <Headerr text='Security Policy' />
                     <div className="contain px-3 pt-3">
                         <p className="headd">Security Policy</p>
                         <p>
