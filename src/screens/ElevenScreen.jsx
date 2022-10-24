@@ -176,7 +176,7 @@ export const ElevenScreen = () => {
                                     <p>
                                         <b>Disclaimer -</b> We may process your user Information where: you have given your consent; the processing is necessary for a contract between you and us; the processing is required by applicable law; the processing is necessary to protect the vital interests of any individual; or where we have a valid legitimate interest in the processing.
                                         <span className="righttext">
-                                            <Link to="/ThirteenScreen">More</Link>
+                                            <Link to="/FourteenScreen">More</Link>
                                         </span>
                                     </p>
                                 </div>

@@ -1,5 +1,5 @@
 .ht{
-    padding-top: 70%;
+    padding-top: 60%;
     text-align: center;
 }
 .logintext {
@@ -26,7 +26,7 @@
 .loginbtn{
     width: 220px;
     height: auto;
-    padding: 3px;
+    padding: 8px;
     background-color: rgb(215, 239, 225);;
     border-radius: 15px;
     
@@ -45,4 +45,9 @@
     --numeric-list-marker: none;
     list-style-type: none;
     /* background-color: aliceblue; */
+}
+
+.info-msg{
+    /* background: red; */
+    margin-top: -15px;
 }

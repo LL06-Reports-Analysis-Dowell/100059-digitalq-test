@@ -136,7 +136,7 @@ export const FifteenScreen = () => {
                 <Dowell>
                     <Headerr text='Your Comments' />
                     <div className="contain px-3 pt-3">
-                        
+
                         {/* comment pic  */}
                         <div className="">
                             <div className="boxx">
@@ -211,30 +211,25 @@ export const FifteenScreen = () => {
                                 </div>
                             </div>
 
-                            <div className="d-flex justify-content-between" style={{ marginTop: '-50px' }}>
-                                <div className="pt-5">
-                                    <img src={info} alt="" height="35px" />
-                                </div>
-                                <div className="">
-                                    <Link to="/">
-                                        <FaPowerOff size="53px" color="gray" style={{ transform: 'rotate(90deg)' }} /> <br />
-                                    </Link>
-                                    Close App
 
-                                </div>
-                            </div>
 
                         </div>
 
                     </div>
-                    {/* <CupertinoFooter2
-                        style={{
-                            height: 50,
-                            width: 327,
-                            position: "absolute",
-                            top: 680,
-                            left: 17,
-                        }} /> */}
+
+                    <div className="d-flex justify-content-between" style={{ marginTop: '-50px' }}>
+                        <div className="pt-5">
+                            <img src={info} alt="" height="35px" />
+                        </div>
+                        <div className="pe-2" style={{marginTop:'5px'}}>
+                            <Link to="/">
+                                <FaPowerOff size="53px" color="gray" style={{ transform: 'rotate(90deg)' }} /> <br />
+                            </Link>
+                            Close App
+
+                        </div>
+                    </div>
+
                 </Dowell>
             </RectStack>
         </Container>
