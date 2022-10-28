@@ -7,19 +7,31 @@ import FifthScreen from "./screens/FirstScreen";
 import SevenScreen from "./screens/SevenScreen";
 import NineScreen from "./screens/NineScreen";
 import FifteenScreen from "./screens/FifteenScreen";
-import Test from "./screens/Test";
+import { SixteenScreen } from "./screens/SixteenScreen";
+import TwentyFourScreen from "./screens/TwentyFourScreen";
+import { ElevenScreen } from "./screens/ElevenScreen";
+import { TwelveScreen } from "./screens/TwelveScreen";
+import { ThirteenScreen } from "./screens/ThirteenScreen";
+import { FourteenScreen } from "./screens/FourteenScreen";
 
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={<Test />} />
+      <Route exact path="/" element={<FirstScreen />} />
       <Route path="/SecondScreen" element={<SecondScreen />} />
       <Route path="/ThirdScreen" element={<ThirdScreen />} />
       <Route path="/FourthScreen" element={<FourthScreen />} />
       <Route path="/FifthScreen" element={<FifthScreen />} />
       <Route path="/SevenScreen" element={<SevenScreen />} />
       <Route path="/NineScreen" element={<NineScreen />} />
+      <Route path="/ElevenScreen" element={<ElevenScreen />} />
+      <Route path="/TwelveScreen" element={<TwelveScreen />} />
+      <Route path="/ThirteenScreen" element={<ThirteenScreen />} />
+      <Route path="/FourteenScreen" element={<FourteenScreen />} />
       <Route path="/FifteenScreen" element={<FifteenScreen />} />
+      <Route path="/SixteenScreen" element={<SixteenScreen />} />
+
+      <Route path="/TwentyFourScreen" element={<TwentyFourScreen />} />
     </Routes>
   );
 }

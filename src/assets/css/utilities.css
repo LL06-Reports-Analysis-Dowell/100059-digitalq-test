@@ -1,0 +1,32 @@
+.background {
+    /* background-color: #c1e7c2; */
+    background-color: rgb(212, 253, 194);
+    border-style: solid;
+    font-family: Roboto;
+    width: 381px;
+    min-height: 738px;
+    height: fit-content;
+    margin-left: 30%;
+    padding: 5px;
+
+}
+
+.parent-font {
+    font-family: "YAD7QhG2T6o 0", _fb_, auto;
+    font-size: 21.3333px;
+    color: rgb(84, 84, 84);
+    line-height: 29px;
+    letter-spacing: 0em;
+    --para-spacing: 0;
+    text-transform: none;
+    --head-indent: 0;
+    --numeric-list-marker: none;
+    list-style-type: none;
+}
+
+.font-weight-400 {
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(84, 84, 84);
+    text-decoration: none;
+}

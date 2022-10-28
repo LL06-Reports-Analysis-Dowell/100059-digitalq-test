@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "../components/drop.css";
 import CupertinoFooter2 from "../components/CupertinoFooter3";
-
+import { Link } from "react-router-dom";
 import { BsInfoCircle } from "react-icons/bs";
 import { TbMessageCircle } from "react-icons/tb";
 
@@ -101,7 +101,9 @@ function NineScreen() {
           </Rect7Row>
           <IconRow>
             <Rect8>
-              <LoginForPayment>login for payment</LoginForPayment>
+              <Link to="/SixteenScreen">
+                <LoginForPayment>login for payment</LoginForPayment>
+              </Link>
             </Rect8>
             <BsInfoCircle
               style={{

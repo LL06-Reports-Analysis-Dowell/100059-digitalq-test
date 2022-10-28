@@ -16,9 +16,11 @@ function CupertinoFooter2(props) {
         </Link>
       </BtnWrapper1>
       <BtnWrapper3>
-        <ButtonOverlay>
-          <TbShieldCheck size="40px" />
-        </ButtonOverlay>
+        <Link to="/ElevenScreen">
+          <ButtonOverlay>
+            <TbShieldCheck size="40px" />
+          </ButtonOverlay>
+        </Link>
       </BtnWrapper3>
       <BtnWrapper4>
         <ButtonOverlay>
@@ -34,9 +36,11 @@ function CupertinoFooter2(props) {
         <img src={require("../assets/images/dowelluser.png")} alt="" />
       </Rect>
       <BtnWrapper5>
-        <ButtonOverlay>
-          <FaUserCircle size="40px" />
-        </ButtonOverlay>
+        <Link to="/SixteenScreen">
+          <ButtonOverlay>
+            <FaUserCircle size="40px" />
+          </ButtonOverlay>
+        </Link>
       </BtnWrapper5>
     </Container>
   );

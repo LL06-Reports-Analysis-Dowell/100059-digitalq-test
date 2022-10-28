@@ -1,0 +1,17 @@
+.pay-info {
+    width: 276.9px;
+    height: 125.412px;
+    background: rgb(190, 244, 166);
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.reader {
+    width: 200px;
+    height: 200px;
+    /* border-style: solid; */
+    border-radius: 25px;
+    /* border-color: green; */
+    /* border-width: 1px; */
+}

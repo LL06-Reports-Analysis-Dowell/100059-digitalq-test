@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { IoReloadCircleSharp } from "react-icons/io5";
 
 import { MdCancel } from "react-icons/md";
 import "../components/drop.css";
@@ -24,16 +23,6 @@ function ThirdScreen(props) {
                   <Brand>brand of cafe, branch</Brand>
                 </Image3Stack>
 
-                <IoReloadCircleSharp
-                  className="icon"
-                  style={{
-                    position: "absolute",
-
-                    right: "10%",
-                  }}
-                  size="30px"
-                  color="green"
-                />
                 <MdCancel
                   className="icon"
                   style={{

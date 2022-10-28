@@ -5,7 +5,6 @@ import CupertinoFooter2 from "../components/CupertinoFooter2";
 import { BsArrowLeftCircle, BsInfoCircle } from "react-icons/bs";
 import { TbMessageCircle } from "react-icons/tb";
 import MaterialButtonDanger from "../components/MaterialButtonDanger";
-import { useParams } from "react-router-dom";
 
 import { Link } from "react-router-dom";
 
@@ -75,16 +74,17 @@ function SevenScreen() {
                 color="red"
                 size="20px"
               />
-
-              <BsArrowLeftCircle
-                style={{
-                  position: "absolute",
-                  top: "570px",
-                  right: "20px",
-                }}
-                color="green"
-                size="40px"
-              />
+              <Link to="/FourthScreen">
+                <BsArrowLeftCircle
+                  style={{
+                    position: "absolute",
+                    top: "570px",
+                    right: "20px",
+                  }}
+                  color="green"
+                  size="40px"
+                />
+              </Link>
             </Icon2Row>
           </Rect>
           <CupertinoFooter2

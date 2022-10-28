@@ -1,0 +1,38 @@
+.brand {
+    width: 296.129px;
+    height: 38.862px;
+
+    font-family: "YAD7QhG2T6o 0", _fb_, auto;
+    font-size: 12.3468px;
+    color: rgb(84, 84, 84);
+    line-height: 17px;
+    letter-spacing: 0em;
+    --para-spacing: 0;
+    text-transform: none;
+    --head-indent: 0;
+    --numeric-list-marker: none;
+    list-style-type: none;
+
+    background: white;
+
+    border-left: green;
+    border-right: green;
+    border-top: white;
+    border-bottom: white;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.btnn {
+    width: 120.305px;
+    height: 46.7056px;
+    /* transform: translate(143.315px, 718.124px); */
+    color: white;
+    background: rgb(0, 128, 55);
+    border-radius: 20px;
+
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}

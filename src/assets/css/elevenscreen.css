@@ -1,0 +1,70 @@
+.contain {
+    font-family: "YAD7QhG2T6o 0", _fb_, auto;
+    font-size: 12px;
+    color: rgb(84, 84, 84);
+    line-height: 16px;
+    letter-spacing: 0em;
+    --para-spacing: 0;
+    text-transform: none;
+    --head-indent: 0;
+    --numeric-list-marker: none;
+    list-style-type: none;
+}
+.datasafety{
+    margin-top: -10px;
+}
+
+.texthead {
+    /* font-size: 20px;
+    font-style: italic; */
+    margin-top: 7px;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(84, 84, 84);
+    text-decoration: none;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    float: right;
+}
+
+.boxx {
+    background: white;
+    height: fit-content;
+    margin-top: -25px;
+    /* padding: -50px; */
+    margin-bottom: 0;
+    padding-bottom: 0px;
+    /* padding-left: 7px; */
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    font-size: 10px;
+    border-radius: 20px;
+}
+
+.boxx .text {
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(84, 84, 84);
+    margin: -10px;
+    padding: 0px 0px 0px 2px;
+    text-decoration: none;
+
+}
+
+.boxx .righttext {
+    display: flex;
+    justify-content: right;
+    padding-right: 2rem;
+    margin: -20px -20px -25px -20px;
+    font-style: italic;
+}
+
+
+.lastimage {
+    height: 60px;
+    width: 60px;
+}

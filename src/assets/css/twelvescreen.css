@@ -1,0 +1,19 @@
+.contain {
+    font-family: "YAD7QhG2T6o 0", _fb_, auto;
+    font-size: 12.0001px;
+    color: rgb(84, 84, 84);
+    line-height: 16px;
+    letter-spacing: 0em;
+    --para-spacing: 0;
+    text-transform: none;
+    --head-indent: 0;
+    --numeric-list-marker: none;
+    list-style-type: none;
+}
+
+.headd {
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(84, 84, 84);
+    text-decoration: none;
+}

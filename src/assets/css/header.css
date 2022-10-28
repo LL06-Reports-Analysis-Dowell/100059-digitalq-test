@@ -1,0 +1,19 @@
+.TextHead {
+    padding-left: 10px;
+    padding-top: 20px;
+    font-size: 20px;
+
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(84, 84, 84);
+    text-decoration: none;
+}
+
+.pic {
+    top: 0px;
+    left: 300px;
+    width: 50px;
+    height: 65px;
+    position: absolute;
+    object-fit: contain;
+}
