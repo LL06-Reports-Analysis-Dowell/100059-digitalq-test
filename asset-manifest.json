@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/100059-digitalq-test/static/css/main.009e05d5.css",
-    "main.js": "/100059-digitalq-test/static/js/main.b28f8d5f.js",
+    "main.css": "/100059-digitalq-test/static/css/main.d69ebdb0.css",
+    "main.js": "/100059-digitalq-test/static/js/main.ed5eb30e.js",
     "static/js/787.7efd31bd.chunk.js": "/100059-digitalq-test/static/js/787.7efd31bd.chunk.js",
     "static/media/cardImage1.png": "/100059-digitalq-test/static/media/cardImage1.18de07683ffe87a67cd8.png",
     "static/media/do1.png": "/100059-digitalq-test/static/media/do1.246740eead5bcc6ba567.png",
+    "static/media/rightcircle.png": "/100059-digitalq-test/static/media/rightcircle.e5131c197331496207e8.png",
     "static/media/do3.gif": "/100059-digitalq-test/static/media/do3.43c528009e69fc8f7346.gif",
     "static/media/Roboto-BlackItalic.ttf": "/100059-digitalq-test/static/media/Roboto-BlackItalic.6a93c6dcc83d3e09b22e.ttf",
     "static/media/Roboto-Italic.ttf": "/100059-digitalq-test/static/media/Roboto-Italic.801622d3d97b471ac0a1.ttf",
@@ -26,9 +27,11 @@
     "static/media/Roboto-ThinItalic.ttf": "/100059-digitalq-test/static/media/Roboto-ThinItalic.35d37b3f03a45cfd32f1.ttf",
     "static/media/Roboto-Thin.ttf": "/100059-digitalq-test/static/media/Roboto-Thin.5911576099b5bb97cadf.ttf",
     "static/media/MaterialIcons-Regular.ttf": "/100059-digitalq-test/static/media/MaterialIcons-Regular.5e7382c63da0098d634a.ttf",
+    "static/media/restu.png": "/100059-digitalq-test/static/media/restu.22a1a93b7028da0ebe95.png",
     "static/media/MaterialIcons-Regular.woff": "/100059-digitalq-test/static/media/MaterialIcons-Regular.83bebaf37c09c7e1c3ee.woff",
     "static/media/food.jpg": "/100059-digitalq-test/static/media/food.ff87d4a500a90fad7deb.jpg",
     "static/media/MaterialIcons-Regular.woff2": "/100059-digitalq-test/static/media/MaterialIcons-Regular.4bf70dc7483474243403.woff2",
+    "static/media/newupdate.png": "/100059-digitalq-test/static/media/newupdate.483e635e9d18057062c3.png",
     "static/media/do3.png": "/100059-digitalq-test/static/media/do3.57cae71e40cd16f537c9.png",
     "static/media/doss.png": "/100059-digitalq-test/static/media/doss.cca25f641e079029e167.png",
     "static/media/do5.png": "/100059-digitalq-test/static/media/do5.a1c19e71d5ae454a4fa6.png",
@@ -37,12 +40,12 @@
     "static/media/slick.ttf": "/100059-digitalq-test/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/100059-digitalq-test/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/100059-digitalq-test/index.html",
-    "main.009e05d5.css.map": "/100059-digitalq-test/static/css/main.009e05d5.css.map",
-    "main.b28f8d5f.js.map": "/100059-digitalq-test/static/js/main.b28f8d5f.js.map",
+    "main.d69ebdb0.css.map": "/100059-digitalq-test/static/css/main.d69ebdb0.css.map",
+    "main.ed5eb30e.js.map": "/100059-digitalq-test/static/js/main.ed5eb30e.js.map",
     "787.7efd31bd.chunk.js.map": "/100059-digitalq-test/static/js/787.7efd31bd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.009e05d5.css",
-    "static/js/main.b28f8d5f.js"
+    "static/css/main.d69ebdb0.css",
+    "static/js/main.ed5eb30e.js"
   ]
 }
