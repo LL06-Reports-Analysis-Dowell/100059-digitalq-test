@@ -70,3 +70,24 @@
     height: 60px;
     width: 60px;
 }
+
+.button {
+    background-color: rgb(212, 253, 194);
+    border: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    color: green;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: 700;
+    
+  }
+
+.button:hover{
+    background-color: white;
+}

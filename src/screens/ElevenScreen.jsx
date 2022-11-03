@@ -100,9 +100,10 @@ export const ElevenScreen = () => {
                                         <div>
                                             <img src={newupdate} alt="img" className="lastimage" />
                                         </div>
-                                        <div className="btn btn-outline-success">
-                                            Install
-                                        </div>
+                                        {/* <div className="">
+                                            <button>Install</button>
+                                        </div> */}
+                                        <button className="button">Install</button>
                                     </div>
                                 </div>
                             </div>
