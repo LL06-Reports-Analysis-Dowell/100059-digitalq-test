@@ -6,16 +6,16 @@ import FourthScreen from "./screens/FourthScreen";
 import FifthScreen from "./screens/FirstScreen";
 import SevenScreen from "./screens/SevenScreen";
 import NineScreen from "./screens/NineScreen";
-import FifteenScreen from "./screens/FifteenScreen";
-import { SixteenScreen } from "./screens/SixteenScreen";
-import TwentyFourScreen from "./screens/TwentyFourScreen";
+
 import { ElevenScreen } from "./screens/ElevenScreen";
 import { TwelveScreen } from "./screens/TwelveScreen";
 import { ThirteenScreen } from "./screens/ThirteenScreen";
 import { FourteenScreen } from "./screens/FourteenScreen";
-
+import FifteenScreen from "./screens/FifteenScreen";
+import { SixteenScreen } from "./screens/SixteenScreen";
 import { SeventeenScreen } from "./screens/SeventeenScreen";
 import { EighteenScreen } from "./screens/EighteenScreen";
+import TwentyFourScreen from "./screens/TwentyFourScreen";
 
 function App() {
   return (

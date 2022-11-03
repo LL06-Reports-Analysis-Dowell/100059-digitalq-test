@@ -49,9 +49,11 @@
     font-weight: 400;
     font-style: normal;
     color: rgb(84, 84, 84);
-    margin: -10px;
-    padding: 0px 0px 0px 2px;
+    margin: 10px;
+    /* padding: 0px 0px 0px 2px; */
+    padding-bottom: 10px;
     text-decoration: none;
+    /* font-size: 20px; */
 
 }
 
@@ -59,7 +61,7 @@
     display: flex;
     justify-content: right;
     padding-right: 2rem;
-    margin: -20px -20px -25px -20px;
+    margin: -10px -20px -25px -20px;
     font-style: italic;
 }
 
