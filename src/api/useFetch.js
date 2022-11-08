@@ -16,7 +16,7 @@ function useFetch(url) {
         setData(response.data);
         setProdCode(response.data.normal.data[0].map((dish) => dish.dish_code));
         setProdName(response.data.normal.data[0].map((dish) => dish.dish_name));
-        console.log(response.data);
+        console.log('from usefetch',response.data);
       })
       .catch((err) => {
         setError(err);

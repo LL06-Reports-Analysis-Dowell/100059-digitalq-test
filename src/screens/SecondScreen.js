@@ -14,6 +14,7 @@ function SecondScreen() {
   const { data: dish, loading } = useFetch(
     "https://100059.pythonanywhere.com/api/population/"
   );
+  // console.log('=========>ok', dish)
 
   return (
     <Container>
@@ -137,10 +138,10 @@ function SecondScreen() {
                             />
                           </td>
                           <td>{dats.dish_code}</td>
-                          <td>{dats.dish_cost}</td>
-                          <td>{dats.dish_price}</td>
-                          <td>{dats.dish_name}</td>
-                          <td>{dats.delivery_time}</td>
+                          <td>{dats.coupon}</td>
+                          <td>{dats.counter}</td>
+                          <td>{dats.queue}</td>
+                          <td>{dats.time}</td>
                         </tr>
                       ))}
                     </tbody>
