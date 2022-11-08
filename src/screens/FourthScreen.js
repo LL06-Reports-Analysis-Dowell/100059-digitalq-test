@@ -16,7 +16,10 @@ function FourthScreen(props) {
     loading,
     ProdCode,
     ProdName,
-  } = useFetch("https://100059.pythonanywhere.com/api/population/");
+  } = useFetch(
+    // "https://100059.pythonanywhere.com/api/population/"
+    "http://100059.pythonanywhere.com/api/targeted_population/"
+    );
 
   const [prodDesc, setprodDesc] = useState("see product description");
   const [prodprice, setprodprice] = useState("price");

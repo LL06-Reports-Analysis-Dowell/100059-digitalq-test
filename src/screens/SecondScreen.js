@@ -12,9 +12,10 @@ import { Link } from "react-router-dom";
 
 function SecondScreen() {
   const { data: dish, loading } = useFetch(
-    "https://100059.pythonanywhere.com/api/population/"
+    // "https://100059.pythonanywhere.com/api/population/"
+    "http://100059.pythonanywhere.com/api/targeted_population/"
   );
-  // console.log('=========>ok', dish)
+  // console.log('=========>ok', dish[0])
 
   return (
     <Container>
@@ -138,10 +139,10 @@ function SecondScreen() {
                             />
                           </td>
                           <td>{dats.dish_code}</td>
-                          <td>{dats.coupon}</td>
-                          <td>{dats.counter}</td>
-                          <td>{dats.queue}</td>
-                          <td>{dats.time}</td>
+                          <td>{dats.dish_cost}</td>
+                          <td>{dats.dish_price}</td>
+                          <td>{dats.dish_name}</td>
+                          <td>{dats.delivery_time}</td>
                         </tr>
                       ))}
                     </tbody>
