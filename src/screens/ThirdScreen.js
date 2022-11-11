@@ -9,9 +9,10 @@ import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
+import axios from "axios";
 
 function ThirdScreen(props) {
-  const initial_values = { number: ""};
+  const initial_values = { number: "" };
   const [formValues, setFormValues] = useState(initial_values);
   // change value function 
   const handleChange = (e) => {
@@ -27,8 +28,30 @@ function ThirdScreen(props) {
     // setFormErrors(validate(formValues));
     // setIsSubmit(true);
     let number = formValues["number"]
-    console.log('Submitted from third screen ========> ',number)
-    
+    console.log('Submitted from third screen ========> ', number)
+    let url = "http://100059.pythonanywhere.com/api/payload/"
+    const config = {
+      headers: {
+        Authorization: 'Bearer ' + localStorage.getItem('access'),
+        "Content-Type": "application/json",
+      },
+    };
+    // const config = null
+    const body = JSON.stringify({ number });
+    console.log('Body===========>',body)
+    console.log('Config===========>',config)
+    axios
+      .post(url, body, config)
+      .then((response) => {
+        // setData(response.data);
+        // setProdCode(response.data.normal.data[0].map((dish) => dish.dish_code));
+        // setProdName(response.data.normal.data[0].map((dish) => dish.dish_name));
+        console.log('from Post data ====>', response);
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+
 
   };
 
@@ -39,85 +62,85 @@ function ThirdScreen(props) {
           <Image2Stack>
             <Image2></Image2>
             <form >
-            <Rect2>
-              <Image3StackStack>
-                <Image3Stack>
-                  <Image3 src={require("../assets/images/do3.png")}></Image3>
-                  <Brand>brand of cafe, branch</Brand>
-                </Image3Stack>
+              <Rect2>
+                <Image3StackStack>
+                  <Image3Stack>
+                    <Image3 src={require("../assets/images/do3.png")}></Image3>
+                    <Brand>brand of cafe, branch</Brand>
+                  </Image3Stack>
 
-                <MdCancel
-                  className="icon"
-                  style={{
-                    position: "absolute",
+                  <MdCancel
+                    className="icon"
+                    style={{
+                      position: "absolute",
 
-                    right: "1%",
-                  }}
-                  size="30px"
-                  color="red"
-                />
-              </Image3StackStack>
-              
-              <dowellinput
-                style={{
-                  paddingLeft: "20px",
-                  top: "300px",
-                  position: "absolute",
-                }}>
-                <LoremIpsum3>
-                  {/* phone number input  */}
-                  <PhoneInput
-                    style={{
-                      paddingLeft: 3,
-                      borderRightColor: "green",
-                      borderRightWidth: 5,
-                      borderLeftColor: "green",
-                      borderLeftWidth: 5,
+                      right: "1%",
                     }}
-                    country={"bd"}
-                    placeholder={"Enter your mobile number to continue"}
-                    name="number"
-                    value={formValues.number}
-                    onChange={handleChange}
-                  />{" "}
-                </LoremIpsum3>
-                <LoremIpsum4>
-                  {/* name input  */}
-                  <input
-                    placeholder="Name"
-                    style={{
-                      textAlign: "center",
-                      height: "35px",
-                      width: "290px",
-                      borderRightColor: "green",
-                      borderRightWidth: 5,
-                      borderLeftColor: "green",
-                      borderLeftWidth: 5,
-                    }}
+                    size="30px"
+                    color="red"
                   />
-                </LoremIpsum4>
-              </dowellinput>
-              
-              <OrderBtn>
-                {" "}
-                <Button
+                </Image3StackStack>
+
+                <dowellinput
                   style={{
                     paddingLeft: "20px",
-                    top: "430px",
+                    top: "300px",
                     position: "absolute",
-                    borderRadius: "20px",
-                    borderColor: "green",
-                    fontSize: "12px",
-                  }}
-                  type="submit"
-                  variant="outlined"
-                  onClick={handleSubmit}
+                  }}>
+                  <LoremIpsum3>
+                    {/* phone number input  */}
+                    <PhoneInput
+                      style={{
+                        paddingLeft: 3,
+                        borderRightColor: "green",
+                        borderRightWidth: 5,
+                        borderLeftColor: "green",
+                        borderLeftWidth: 5,
+                      }}
+                      country={"bd"}
+                      placeholder={"Enter your mobile number to continue"}
+                      name="number"
+                      value={formValues.number}
+                      onChange={handleChange}
+                    />{" "}
+                  </LoremIpsum3>
+                  <LoremIpsum4>
+                    {/* name input  */}
+                    <input
+                      placeholder="Name"
+                      style={{
+                        textAlign: "center",
+                        height: "35px",
+                        width: "290px",
+                        borderRightColor: "green",
+                        borderRightWidth: 5,
+                        borderLeftColor: "green",
+                        borderLeftWidth: 5,
+                      }}
+                    />
+                  </LoremIpsum4>
+                </dowellinput>
+
+                <OrderBtn>
+                  {" "}
+                  <Button
+                    style={{
+                      paddingLeft: "20px",
+                      top: "430px",
+                      position: "absolute",
+                      borderRadius: "20px",
+                      borderColor: "green",
+                      fontSize: "12px",
+                    }}
+                    type="submit"
+                    variant="outlined"
+                    onClick={handleSubmit}
                   >
-                  
-                  <Link to="/FourthScreen">New Order</Link>
-                </Button>
-              </OrderBtn>
-            </Rect2>
+
+                    <Link to="/FourthScreen">New Order</Link>
+                  </Button>
+                </OrderBtn>
+              </Rect2>
             </form >
           </Image2Stack>
         </Rect>
