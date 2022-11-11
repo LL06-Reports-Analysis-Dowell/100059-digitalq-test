@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 
 import { MdCancel } from "react-icons/md";
@@ -10,12 +11,34 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 
 function ThirdScreen(props) {
+  const initial_values = { number: ""};
+  const [formValues, setFormValues] = useState(initial_values);
+  // change value function 
+  const handleChange = (e) => {
+    // console.log(e);
+    // const { name, value } = e.target;
+    setFormValues({ ...formValues, ['number']: e });
+    console.log('number ==> ', formValues["number"]);
+  };
+
+  // submit form function 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // setFormErrors(validate(formValues));
+    // setIsSubmit(true);
+    let number = formValues["number"]
+    console.log('Submitted from third screen ========> ',number)
+    
+
+  };
+
   return (
     <Container>
       <RectStack>
         <Rect>
           <Image2Stack>
             <Image2></Image2>
+            <form >
             <Rect2>
               <Image3StackStack>
                 <Image3Stack>
@@ -34,6 +57,7 @@ function ThirdScreen(props) {
                   color="red"
                 />
               </Image3StackStack>
+              
               <dowellinput
                 style={{
                   paddingLeft: "20px",
@@ -41,6 +65,7 @@ function ThirdScreen(props) {
                   position: "absolute",
                 }}>
                 <LoremIpsum3>
+                  {/* phone number input  */}
                   <PhoneInput
                     style={{
                       paddingLeft: 3,
@@ -49,13 +74,15 @@ function ThirdScreen(props) {
                       borderLeftColor: "green",
                       borderLeftWidth: 5,
                     }}
-                    country={"us"}
+                    country={"bd"}
                     placeholder={"Enter your mobile number to continue"}
-                    // value={this.state.phone}
-                    // onChange={(phone) => this.setState({ phone })}
+                    name="number"
+                    value={formValues.number}
+                    onChange={handleChange}
                   />{" "}
                 </LoremIpsum3>
                 <LoremIpsum4>
+                  {/* name input  */}
                   <input
                     placeholder="Name"
                     style={{
@@ -70,6 +97,7 @@ function ThirdScreen(props) {
                   />
                 </LoremIpsum4>
               </dowellinput>
+              
               <OrderBtn>
                 {" "}
                 <Button
@@ -81,11 +109,16 @@ function ThirdScreen(props) {
                     borderColor: "green",
                     fontSize: "12px",
                   }}
-                  variant="outlined">
+                  type="submit"
+                  variant="outlined"
+                  onClick={handleSubmit}
+                  >
+                  
                   <Link to="/FourthScreen">New Order</Link>
                 </Button>
               </OrderBtn>
             </Rect2>
+            </form >
           </Image2Stack>
         </Rect>
       </RectStack>
